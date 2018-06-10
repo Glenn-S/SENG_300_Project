@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SENG_300_Project</string>
+    <string name="title_activity_log_task">logTask</string>
 </resources>
