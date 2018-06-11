@@ -28,7 +28,6 @@ public class LogTask {
         return finalTime;
     }
 
-
     // adds a new task to the task list
     public List addTask (String task) {
         list.add(task); // append to the end of the list
