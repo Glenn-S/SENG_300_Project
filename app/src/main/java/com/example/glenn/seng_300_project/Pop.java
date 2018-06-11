@@ -1,9 +1,12 @@
 package com.example.glenn.seng_300_project;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.DisplayMetrics;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -37,7 +40,14 @@ public class Pop extends Activity {
 
         listView = (ListView)findViewById(R.id.customTasksList);
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, customTaskList);
-
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                finish();
+            }
+        });
     }
 }

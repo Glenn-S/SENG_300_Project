@@ -15,6 +15,7 @@ public class LogTasks extends AppCompatActivity {
     private ListView lvTaskItems;
     private TaskItemsAdapter adapter;
     private List<TaskList> mTaskItems;
+    public static final int POP_WINDOW_REQUEST_CODE = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,22 +46,9 @@ public class LogTasks extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 startActivity(new Intent(LogTasks.this, Pop.class));
-
                 view.setBackgroundColor(Color.parseColor("#3174C6"));
-                lvTaskItems.invalidateViews();
-                /*int color = ((ColorDrawable)view.getBackground()).getColor();
-                String Hex = Integer.toHexString(color);
-                mTaskItems.add(new TaskList(Hex, "colour of background"));
-                lvTaskItems.invalidateViews();*/
-                //Do something
-                //Ex. display msg
-                //Toast.makeText(getApplicationContext(), "Clicked Task" + view.getTag(), Toast.LENGTH_SHORT).show();
-                //view.setSelected(true);
-                //lvTaskItems.setBackgroundColor();
             }
         });
-
-
     }
 
 }
