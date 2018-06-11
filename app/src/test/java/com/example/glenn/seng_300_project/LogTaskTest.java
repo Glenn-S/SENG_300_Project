@@ -3,6 +3,7 @@ package com.example.glenn.seng_300_project;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -70,7 +71,7 @@ public class LogTaskTest {
         assertEquals("9:00", logItems.get(0).getTime().toString());
         assertEquals("11:00", logItems.get(2).getTime().toString());
     }
-/*
+
     // changes the background colour of a task when completed
     @Test
     public void changeBackColourTest () {
@@ -102,7 +103,7 @@ public class LogTaskTest {
             assertEquals(logItems.get(0).getTask().toString(), returnedItems.get(0).getTask().toString());
         }
     }
-*/
+
     // good to start
     @Test
     public void addBlankLogItemTest () {

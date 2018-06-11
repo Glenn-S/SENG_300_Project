@@ -1,7 +1,7 @@
 package com.example.glenn.seng_300_project;
 
+import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -23,6 +23,7 @@ public class LogTasks extends AppCompatActivity {
 
         lvTaskItems = (ListView)findViewById(R.id.list_view);
 
+
         mTaskItems = new ArrayList<>(); // set new array of task times in unspecified type
         mTaskItems.add(new TaskList("9am", "Coded"));
         mTaskItems.add(new TaskList("10am", "Read Email"));
@@ -43,11 +44,14 @@ public class LogTasks extends AppCompatActivity {
         lvTaskItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                startActivity(new Intent(LogTasks.this, Pop.class));
+
                 view.setBackgroundColor(Color.parseColor("#3174C6"));
-                int color = ((ColorDrawable)view.getBackground()).getColor();
+                lvTaskItems.invalidateViews();
+                /*int color = ((ColorDrawable)view.getBackground()).getColor();
                 String Hex = Integer.toHexString(color);
                 mTaskItems.add(new TaskList(Hex, "colour of background"));
-                lvTaskItems.invalidateViews();
+                lvTaskItems.invalidateViews();*/
                 //Do something
                 //Ex. display msg
                 //Toast.makeText(getApplicationContext(), "Clicked Task" + view.getTag(), Toast.LENGTH_SHORT).show();
