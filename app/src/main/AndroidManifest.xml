@@ -16,7 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
         <activity android:name=".LogTasks"></activity>
 
         <activity android:name=".Pop"
@@ -25,7 +24,6 @@
         <activity android:name=".NavigationBaseActivity"></activity>
         <activity android:name=".HelpActivity"></activity>
         <activity android:name=".TaskActivity"></activity>
-=======
         <activity android:name=".LogTasks" />
         <activity
             android:name=".Pop"
@@ -38,7 +36,6 @@
         <activity android:name=".StartActivity" />
         <activity android:name=".StartTimeActivity" />
         <activity android:name=".SetTimeActivity"></activity>
->>>>>>> joseph
     </application>
 
 </manifest>
