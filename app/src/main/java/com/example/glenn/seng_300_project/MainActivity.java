@@ -1,26 +1,20 @@
 package com.example.glenn.seng_300_project;
 
 import android.content.Intent;
-<<<<<<< HEAD
-=======
 import android.content.SharedPreferences;
->>>>>>> joseph
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-<<<<<<< HEAD
-=======
 import android.widget.EditText;
 import android.widget.TextView;
->>>>>>> joseph
+
 
 public class MainActivity extends NavigationBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< HEAD
         super.setContentView(R.layout.activity_main);
 
         // simpl
@@ -35,7 +29,7 @@ public class MainActivity extends NavigationBaseActivity {
     }
 
 }
-=======
+
         setContentView(R.layout.activity_main);
 
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
@@ -68,4 +62,4 @@ public class MainActivity extends NavigationBaseActivity {
         });
     }
 }
->>>>>>> joseph
+
