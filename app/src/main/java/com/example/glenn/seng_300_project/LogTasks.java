@@ -13,10 +13,4 @@ public class LogTasks extends AppCompatActivity {
 
     }
 
-    public void setTaskColour(){
-
-        return;
-    }
-
-
 }
