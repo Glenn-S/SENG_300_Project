@@ -21,7 +21,6 @@ public class LogTasks extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_tasks);
-<<<<<<< HEAD
         LogTask logTask = new LogTask(); // new instance of logTask class
 
         lvTaskItems = (ListView)findViewById(R.id.list_view);
@@ -32,12 +31,8 @@ public class LogTasks extends AppCompatActivity {
 
 
         //for test purposes
-=======
-
         lvTaskItems = (ListView)findViewById(R.id.list_view);
 
-
->>>>>>> joseph
         mTaskItems = new ArrayList<>(); // set new array of task times in unspecified type
         mTaskItems.add(new TaskList("9am", "Coded"));
         mTaskItems.add(new TaskList("10am", "Read Email"));
@@ -58,17 +53,13 @@ public class LogTasks extends AppCompatActivity {
         lvTaskItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-<<<<<<< HEAD
                 Intent intent = new Intent(LogTasks.this, Pop.class);
                 // pass the time string to the pop class
                 intent.putExtra("time", mTaskItems.get(position).getTime());
                 startActivity(intent);
                 //view.setBackgroundColor(Color.parseColor("#3174C6"));
-
-=======
                 startActivity(new Intent(LogTasks.this, Pop.class));
                 view.setBackgroundColor(Color.parseColor("#3174C6"));
->>>>>>> joseph
             }
         });
     }
