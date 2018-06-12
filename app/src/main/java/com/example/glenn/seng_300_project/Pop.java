@@ -53,10 +53,10 @@ public class Pop extends Activity {
         //customTaskList.addAll(Arrays.asList("Coding", "Meeting", "Coffee Break", "Checked Emails", "Worked on the big project for Encana that is due at the end of the quarter", "Ran Errands"));
 
         // set button and list properties
-        addBtn = (FloatingActionButton) findViewById(R.id.fabAddTask);
+        //addBtn = (FloatingActionButton) findViewById(R.id.fabAddTask);
 
         // populate the list view
-        ArrayList<String> customTaskList = new ArrayList<String>();
+        //ArrayList<String> customTaskList = new ArrayList<String>();
         customTaskList.addAll(Arrays.asList("Coding",
                 "Meeting",
                 "Coffee Break",
