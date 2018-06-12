@@ -1,7 +1,7 @@
 package com.example.glenn.seng_300_project;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,9 +11,9 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
-public class SetTimeActivity extends AppCompatActivity {
+public class SetTimeActivity extends Activity {
 
-    int interval, hour, minute;
+    int interval = 15, hour = 1, minute = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,11 +99,11 @@ public class SetTimeActivity extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent();
+                Intent intent = new Intent(SetTimeActivity.this, LogTasks.class);
                 intent.putExtra("HOUR_KEY", hour);
                 intent.putExtra("MINUTE_KEY", minute);
                 intent.putExtra("FREQUENCY_KEY", interval);
-                startActivity(new Intent(SetTimeActivity.this, LogTasks.class));
+                startActivity(intent);
             }
         });
 
