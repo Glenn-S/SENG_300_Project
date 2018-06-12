@@ -7,50 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a9a9bd6-a5c2-4b2b-987f-3debb8e04e69" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___C__Users_deeri_StudioProjects_SENG_300_Project_app_libs_opencsv_4_2_jar_unspecified_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/example/glenn/seng_300_project/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/example/glenn/seng_300_project/BuildConfig.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/release/com/example/glenn/seng_300_project/BuildConfig.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/glenn/seng_300_project/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/glenn/seng_300_project/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/arch/core/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/arch/lifecycle/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/arch/lifecycle/livedata/core/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/arch/lifecycle/viewmodel/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/compat/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/constraint/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/coreui/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/coreutils/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/design/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/fragment/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/graphics/drawable/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/graphics/drawable/animated/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/mediacompat/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/transition/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/v4/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/v7/appcompat/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/v7/recyclerview/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/com/example/glenn/seng_300_project/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/output.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-release-report.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/lint-results-release-fatal.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/lint-results-release-fatal.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -86,7 +43,7 @@
       <file leaf-file-name="TaskActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
+            <state relative-caret-position="726">
               <caret line="48" column="55" lean-forward="true" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
               <folding />
             </state>
@@ -2343,6 +2300,14 @@
       <option name="presentableId" value="Default" />
       <updated>1528761946592</updated>
     </task>
+    <task id="LOCAL-00001" summary="Init commit">
+      <created>1528845235345</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1528845235345</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2656,7 +2621,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
+        <state relative-caret-position="726">
           <caret line="48" column="55" lean-forward="true" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
           <folding />
         </state>
