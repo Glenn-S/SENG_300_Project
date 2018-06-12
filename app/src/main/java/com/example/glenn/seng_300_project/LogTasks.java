@@ -27,18 +27,19 @@ public class LogTasks extends AppCompatActivity {
 
         lvTaskItems = (ListView)findViewById(R.id.list_view);
         // values passed from the setFrequency page to establish the time and frequency
-        String startTime = getIntent().getStringExtra("TIME_KEY");
+/*        String startTime = getIntent().getStringExtra("TIME_KEY");
         String frequency = getIntent().getStringExtra("FREQUENCY_KEY");
         TextView timeofNext = (TextView) findViewById(R.id.timeOfNext);
         timeofNext.setText(logTask.displayNextInterval(mTaskItems, startTime, frequency));
+*/
         // on creating the screen, the mTaskItems will be unpopulated
         // call getFile even though because it should be empty
 
 
         //for test purposes
         mTaskItems = new ArrayList<>(); // set new array of task times in unspecified type
-        CSVManager CSV = new CSVManager("");
-       /* try{
+       /* CSVManager CSV = new CSVManager("");
+        try{
             mTaskItems = CSV.readTaskList();
         };*/
 
