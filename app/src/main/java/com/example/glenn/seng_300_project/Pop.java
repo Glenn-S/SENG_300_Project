@@ -86,7 +86,7 @@ public class Pop extends Activity {
             }
 
         });
-/*
+
         // to add a new task to the tasks list
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,8 +100,8 @@ public class Pop extends Activity {
                 finish();
             }
         });
-*/
-        mTaskManager = new TaskManager(this);
+
+ /*       mTaskManager = new TaskManager(this);
         mAdapter = new TaskAdapter(this, mTaskManager);
 
         addBtn.setOnClickListener(new View.OnClickListener() {
@@ -147,6 +147,6 @@ public class Pop extends Activity {
                 //should this window close after the user has entered their new task?
                 //finish();
             }
-        });
+        });*/
     }
 }

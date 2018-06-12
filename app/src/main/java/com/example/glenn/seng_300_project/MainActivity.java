@@ -22,7 +22,7 @@ public class MainActivity extends NavigationBaseActivity {
                 startActivity(startIntent);
             }
         });
-
+/*
         // to Set Time activity (temporary)
         Button btnSetTime = (Button) findViewById(R.id.btnSetTime);
         btnSetTime.setOnClickListener(new View.OnClickListener() {
@@ -32,7 +32,7 @@ public class MainActivity extends NavigationBaseActivity {
                 startActivity(startIntent);
             }
         });
-
+*/
     }
 
 }
