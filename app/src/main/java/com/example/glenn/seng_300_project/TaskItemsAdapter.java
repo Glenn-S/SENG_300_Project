@@ -19,21 +19,43 @@ public class TaskItemsAdapter extends BaseAdapter {
     }
 
     // constructor
+
+    /**
+     * To get the size of the array in number of elements
+     * @return
+     */
     @Override
     public int getCount() {
         return mTaskItems.size();
     }
 
+    /**
+     * To get the item at the index, position and return the element
+     * @param position
+     * @return
+     */
     @Override
     public Object getItem(int position) {
         return mTaskItems.get(position);
     }
 
+    /**
+     * To get the item index and return it
+     * @param position
+     * @return
+     */
     @Override
     public long getItemId(int position) {
         return position;
     }
 
+    /**
+     *
+     * @param position
+     * @param convertView
+     * @param parent
+     * @return
+     */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View v = View.inflate(mContext, R.layout.list_view_custom_layout, null);

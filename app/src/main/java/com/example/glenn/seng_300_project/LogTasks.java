@@ -1,9 +1,5 @@
 package com.example.glenn.seng_300_project;
 
-import android.app.AlarmManager;
-import android.app.PendingIntent;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -11,42 +7,42 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 public class LogTasks extends AppCompatActivity {
     private ListView lvTaskItems;
     private TaskItemsAdapter adapter;
-    private List<TaskList> mTaskItems;
-    public static final int POP_WINDOW_REQUEST_CODE = 0;
-
-    private int hour, minute, interval;
+    private ArrayList<TaskList> mTaskItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        Bundle extras = getIntent().getExtras();
-        hour = extras.getInt("HOUR_KEY");
-        minute = extras.getInt("MINUTE_KEY");
-        interval = extras.getInt("INTERVAL_KEY");
-
-        Calendar c = Calendar.getInstance();
-        c.set(Calendar.HOUR_OF_DAY, hour);
-        c.set(Calendar.MINUTE, minute);
-        c.set(Calendar.SECOND, 0);
-
         setContentView(R.layout.activity_log_tasks);
         LogTask logTask = new LogTask(); // new instance of logTask class
 
         lvTaskItems = (ListView)findViewById(R.id.list_view);
+        // values passed from the setFrequency page to establish the time and frequency
+/*        String startTime = getIntent().getStringExtra("TIME_KEY");
+        String frequency = getIntent().getStringExtra("FREQUENCY_KEY");
+        TextView timeofNext = (TextView) findViewById(R.id.timeOfNext);
+        timeofNext.setText(logTask.displayNextInterval(mTaskItems, startTime, frequency));
+*/
+        // on creating the screen, the mTaskItems will be unpopulated
+        // call getFile even though because it should be empty
+
 
         //for test purposes
-        lvTaskItems = (ListView)findViewById(R.id.list_view);
-
         mTaskItems = new ArrayList<>(); // set new array of task times in unspecified type
+       /* CSVManager CSV = new CSVManager("");
+        try{
+            mTaskItems = CSV.readTaskList();
+        };*/
+
         mTaskItems.add(new TaskList("9am", "Coded"));
         mTaskItems.add(new TaskList("10am", "Read Email"));
         mTaskItems.add(new TaskList("11am", "Meetings"));
@@ -67,48 +63,19 @@ public class LogTasks extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(LogTasks.this, Pop.class);
-                // pass the time string to the pop class
+                // pass the time string to the pop class for saving the selected value
                 intent.putExtra("time", mTaskItems.get(position).getTime());
                 startActivity(intent);
+
+                // get background colour to not change back after the screen is moved up or down
                 //view.setBackgroundColor(Color.parseColor("#3174C6"));
-                startActivity(new Intent(LogTasks.this, Pop.class));
-                view.setBackgroundColor(Color.parseColor("#3174C6"));
+
             }
         });
     }
-
-    private void startAlarm(Calendar c)
-    {
-        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(this, AlertReceiver.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
-
-        // This block checks for if the user chooses an earlier time and add the blocks accordingly.
-        c.add(Calendar.MINUTE, interval);
-        while(c.before(Calendar.getInstance()))
-        {
-            // add createNewTaskLog() method
-            c.add(Calendar.MINUTE, interval);
-        }
-
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), 1000*60*interval, pendingIntent);
-
-    }
-
-    private void cancelAlarm()
-    {
-        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(this, AlertReceiver.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
-
-        alarmManager.cancel(pendingIntent);
-    }
-
-    public class AlertReceiver extends BroadcastReceiver {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-
-        }
-    }
+    //NOTES FOR IMPLEMENTING THE TIMER WHEN IT IS AVAILABLE
+    // when the onAlarmListener is added, add the update of the log task list into it
+    // also the time to next interval text will be linked to it as well
+    // also get and set file will be called every interval when adding the new empty tas
+    // use dipl
 }
-

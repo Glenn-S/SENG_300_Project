@@ -7,8 +7,8 @@ public class LogTask {
     static List list = new ArrayList();
 
 
-    // calculates the time and adds it into the text box
-    public String displayInterval (ArrayList<TaskList> logItems, String startTime, String frequency) {
+    // calculates the time of the current interval for the list view
+    public String getNextInterval (ArrayList<TaskList> logItems, String startTime, String frequency) {
         int totalItems = logItems.size();
         String times[] = startTime.split(":");
         int startHour = Integer.parseInt(times[0]); // convert to minutes
@@ -16,6 +16,27 @@ public class LogTask {
         int start = (startHour*60) + startMin;
         int freq = Integer.parseInt(frequency);
         int totalTime = start + (totalItems * freq);
+        int totalHour = totalTime/60; // divide by min per hour
+        int totalMin = totalTime%60; // modulo to get remainder in minutes
+        String finalTime;
+        if (totalMin == 0){
+            finalTime = totalHour + ":" + totalMin + "0";
+        }
+        else {
+            finalTime =  totalHour + ":" + totalMin;
+        }
+        return finalTime;
+    }
+
+    // calculates the time of the next interval for the text box
+    public String displayNextInterval (ArrayList<TaskList> logItems, String startTime, String frequency) {
+        int totalItems = logItems.size();
+        String times[] = startTime.split(":");
+        int startHour = Integer.parseInt(times[0]); // convert to minutes
+        int startMin = Integer.parseInt(times[1]);
+        int start = (startHour*60) + startMin;
+        int freq = Integer.parseInt(frequency);
+        int totalTime = start + (totalItems * freq) + freq; // add frequency to get the next interval
         int totalHour = totalTime/60; // divide by min per hour
         int totalMin = totalTime%60; // modulo to get remainder in minutes
         String finalTime;
