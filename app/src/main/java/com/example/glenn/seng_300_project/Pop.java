@@ -58,11 +58,11 @@ public class Pop extends Activity {
         // populate the list view
         ArrayList<String> customTaskList = new ArrayList<String>();
         customTaskList.addAll(Arrays.asList("Coding",
-                                            "Meeting",
-                                            "Coffee Break",
-                                            "Checked Emails",
-                                            "Worked on the big project for Encana that is due at the end of the quarter",
-                                            "Ran Errands"));
+                "Meeting",
+                "Coffee Break",
+                "Checked Emails",
+                "Worked on the big project for Encana that is due at the end of the quarter",
+                "Ran Errands"));
 
 
         listView = (ListView)findViewById(R.id.customTasksList);

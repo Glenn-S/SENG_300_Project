@@ -17,19 +17,6 @@ public class MainActivity extends NavigationBaseActivity {
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.activity_main);
 
-        // simpl
-        Button button = (Button) findViewById(R.id.btnLogTasks);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), LogTasks.class);
-                startActivity(startIntent);
-            }
-        });
-    }
-
-}
-
         setContentView(R.layout.activity_main);
 
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
