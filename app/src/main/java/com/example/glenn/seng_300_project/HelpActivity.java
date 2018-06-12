@@ -7,7 +7,7 @@ public class HelpActivity extends NavigationBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);s
+        super.onCreate(savedInstanceState);
         super.setContentView(R.layout.activity_help);
     }
 
