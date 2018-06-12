@@ -21,6 +21,8 @@
         <activity android:name=".Pop"
             android:theme="@style/AppTheme.CustomTheme"
             ></activity>'
+        <activity android:name=".StartActivity"></activity>
+        <activity android:name=".SetTimeActivity"></activity>
         <activity android:name=".NavigationBaseActivity"></activity>
         <activity android:name=".HelpActivity"></activity>
         <activity android:name=".TaskActivity"></activity>

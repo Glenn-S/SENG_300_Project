@@ -11,6 +11,8 @@ import static org.junit.Assert.assertEquals;
 public class LogTaskTest {
     /*
         Tests
+
+        Need to adjust some of these tests to deal with function name changes etc
      */
 
     // good to start

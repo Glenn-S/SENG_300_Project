@@ -87,8 +87,9 @@ public class Pop extends Activity {
 
         });
 
+        // previous onClick for add button
         // to add a new task to the tasks list
-        addBtn.setOnClickListener(new View.OnClickListener() {
+        /*addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // call alert dialogue
@@ -99,11 +100,13 @@ public class Pop extends Activity {
                 //should this window close after the user has entered their new task?
                 finish();
             }
-        });
+        });*/
 
- /*       mTaskManager = new TaskManager(this);
+        mTaskManager = new TaskManager(this);
         mAdapter = new TaskAdapter(this, mTaskManager);
 
+
+        // there is an error in here after the user presses ok
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -122,6 +125,9 @@ public class Pop extends Activity {
                 dialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+                        // when ok, update the list and database
+                        // need to call add task
+
                         mAdapter.add(input.getText().toString());
                         mAdapter.notifyItemInserted(mAdapter.getItemCount() - 1);
                         mAdapter.notifyDataSetChanged();
@@ -147,6 +153,6 @@ public class Pop extends Activity {
                 //should this window close after the user has entered their new task?
                 //finish();
             }
-        });*/
+        });
     }
 }

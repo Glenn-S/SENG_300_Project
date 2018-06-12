@@ -15,7 +15,7 @@ public class SetTimeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set_time);
-
+/*
         NumberPicker intervalPicker = (NumberPicker) findViewById(R.id.intervalPicker);
         final String[] displayedValues1 = {"15 MINS", "30 MINS", "45 MINS", "1 HOUR", "2 HOURS", "3 HOURS", "4 HOURS", "8 HOURS"};
         intervalPicker.setMinValue(0);
@@ -50,7 +50,8 @@ public class SetTimeActivity extends AppCompatActivity {
 
             }
         });
-
+*/
+/*
         Button nextButton = (Button) findViewById(R.id.nextButton);
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,5 +59,6 @@ public class SetTimeActivity extends AppCompatActivity {
                 startActivity(new Intent(SetTimeActivity.this, LogTasks.class));
             }
         });
+*/
     }
 }

@@ -22,7 +22,9 @@ public class MainActivity extends NavigationBaseActivity {
                 startActivity(startIntent);
             }
         });
-/*
+
+        //Seems to be errors linking up with Josephs pages
+        // Anthony's pages work just fine
         // to Set Time activity (temporary)
         Button btnSetTime = (Button) findViewById(R.id.btnSetTime);
         btnSetTime.setOnClickListener(new View.OnClickListener() {
@@ -32,7 +34,18 @@ public class MainActivity extends NavigationBaseActivity {
                 startActivity(startIntent);
             }
         });
-*/
+
+        // side bar activity works
+        // to Set Time activity (temporary)
+        Button btnStart = (Button) findViewById(R.id.btnStart);
+        btnSetTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), StartActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
     }
 
 }
