@@ -31,8 +31,6 @@ public class LogTasks extends AppCompatActivity {
 
 
         //for test purposes
-        lvTaskItems = (ListView)findViewById(R.id.list_view);
-
         mTaskItems = new ArrayList<>(); // set new array of task times in unspecified type
         mTaskItems.add(new TaskList("9am", "Coded"));
         mTaskItems.add(new TaskList("10am", "Read Email"));
@@ -58,8 +56,7 @@ public class LogTasks extends AppCompatActivity {
                 intent.putExtra("time", mTaskItems.get(position).getTime());
                 startActivity(intent);
                 //view.setBackgroundColor(Color.parseColor("#3174C6"));
-                startActivity(new Intent(LogTasks.this, Pop.class));
-                view.setBackgroundColor(Color.parseColor("#3174C6"));
+
             }
         });
     }

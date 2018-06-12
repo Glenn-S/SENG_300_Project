@@ -13,26 +13,25 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import org.w3c.dom.Text;
-import android.widget.ListView;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-
 public class Pop extends Activity {
 
     ListView listView;
     ArrayAdapter<String> adapter;
-
     // set up the add task button
     FloatingActionButton addBtn;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         //set the window properties
         setContentView(R.layout.popwindow);
         DisplayMetrics dm = new DisplayMetrics();
@@ -40,6 +39,7 @@ public class Pop extends Activity {
         int width = dm.widthPixels;
         int height = dm.heightPixels;
         getWindow().setLayout((int)(width*0.7), (int)(height*0.5));
+
 
         // populate the list view
         TaskManager mTasks = new TaskManager(Pop.this);
@@ -54,17 +54,6 @@ public class Pop extends Activity {
 
         // set button and list properties
         addBtn = (FloatingActionButton) findViewById(R.id.fabAddTask);
-
-        // populate the list view
-        ArrayList<String> customTaskList = new ArrayList<String>();
-        customTaskList.addAll(Arrays.asList("Coding",
-                                            "Meeting",
-                                            "Coffee Break",
-                                            "Checked Emails",
-                                            "Worked on the big project for Encana that is due at the end of the quarter",
-                                            "Ran Errands"));
-
-
         listView = (ListView)findViewById(R.id.customTasksList);
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, customTaskList);
         listView.setAdapter(adapter);
@@ -81,7 +70,6 @@ public class Pop extends Activity {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
                 //setFile(customTaskList.get(position)); // this order may not work
                 finish();
             }
@@ -97,9 +85,7 @@ public class Pop extends Activity {
                 listView.invalidateViews();
                 Toast.makeText(Pop.this, "Added Task", Toast.LENGTH_SHORT).show();
                 //finish();
-                finish();
             }
-
         });
     }
 }

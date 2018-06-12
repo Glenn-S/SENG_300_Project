@@ -24,18 +24,6 @@
         <activity android:name=".NavigationBaseActivity"></activity>
         <activity android:name=".HelpActivity"></activity>
         <activity android:name=".TaskActivity"></activity>
-        <activity android:name=".LogTasks" />
-        <activity
-            android:name=".Pop"
-            android:theme="@style/AppTheme.CustomTheme" />
-        '
-        <activity android:name=".NavigationBaseActivity" />
-        <activity android:name=".HelpActivity" />
-        <activity android:name=".TaskActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".StartActivity" />
-        <activity android:name=".StartTimeActivity" />
-        <activity android:name=".SetTimeActivity"></activity>
     </application>
 
 </manifest>
