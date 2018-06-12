@@ -52,7 +52,7 @@ public class LogTaskTest {
         logItems.add(new TaskList("10:00", "Read Email"));
         String start = "9:00";
         String freq = "60"; // time is in minutes
-        String intervalValue = task.displayInterval(logItems, start, freq);
+        String intervalValue = task.getNextInterval(logItems, start, freq);
         assertEquals("11:00", intervalValue.toString());
         return;
     }

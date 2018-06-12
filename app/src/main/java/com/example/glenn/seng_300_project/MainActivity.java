@@ -13,15 +13,26 @@ public class MainActivity extends NavigationBaseActivity {
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.activity_main);
 
-        // simpl
-        Button button = (Button) findViewById(R.id.btnLogTasks);
-        button.setOnClickListener(new View.OnClickListener() {
+        // To log Tasks screen (temporary)
+        Button btnLog = (Button) findViewById(R.id.btnLogTasks);
+        btnLog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), LogTasks.class);
                 startActivity(startIntent);
             }
         });
+
+        // to Set Time activity (temporary)
+        Button btnSetTime = (Button) findViewById(R.id.btnSetTime);
+        btnSetTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), SetTimeActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
     }
 
 }
