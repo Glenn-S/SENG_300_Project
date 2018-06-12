@@ -21,10 +21,16 @@ public class LogTasks extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_tasks);
+        LogTask logTask = new LogTask(); // new instance of logTask class
 
         lvTaskItems = (ListView)findViewById(R.id.list_view);
+        // values passed from the setFrequency page to establish the time and frequncy
+        String startTime = getIntent().getStringExtra("TIME_KEY");
+        String frequency = getIntent().getStringExtra("FREQUENCY_KEY");
 
 
+
+        //for test purposes
         mTaskItems = new ArrayList<>(); // set new array of task times in unspecified type
         mTaskItems.add(new TaskList("9am", "Coded"));
         mTaskItems.add(new TaskList("10am", "Read Email"));
@@ -45,8 +51,12 @@ public class LogTasks extends AppCompatActivity {
         lvTaskItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                startActivity(new Intent(LogTasks.this, Pop.class));
-                view.setBackgroundColor(Color.parseColor("#3174C6"));
+                Intent intent = new Intent(LogTasks.this, Pop.class);
+                // pass the time string to the pop class
+                intent.putExtra("time", mTaskItems.get(position).getTime());
+                startActivity(intent);
+                //view.setBackgroundColor(Color.parseColor("#3174C6"));
+
             }
         });
     }
