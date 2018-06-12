@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <NumberPicker
+        android:id="@+id/intervalPicker"
+        android:layout_width="60dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true" />
+
+    <NumberPicker
+        android:id="@+id/hourPicker"
+        android:layout_width="60dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="290dp"
+        android:layout_toStartOf="@+id/textView1" />
+
+    <NumberPicker
+        android:id="@+id/minutePicker"
+        android:layout_width="60dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="290dp"
+        android:layout_centerHorizontal="true" />
+
+    <NumberPicker
+        android:id="@+id/middayPicker"
+        android:layout_width="60dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="290dp"
+        android:layout_toEndOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="15dp"
+        android:text="FREQUENCY"  />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_marginTop="250dp"
+        android:text="START TIME" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/holo_green_light"
+        android:text="NEXT"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+</RelativeLayout>
