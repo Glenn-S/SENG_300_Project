@@ -31,6 +31,7 @@ public class LogTasks extends NavigationBaseActivity {
 
         Intent intent = getIntent();
 
+
         if(intent.getExtras() == null) {
             hour = 0;
             minute = 0;
@@ -57,7 +58,7 @@ public class LogTasks extends NavigationBaseActivity {
 
         mTaskItems = new ArrayList<>(); // set new array of task times in unspecified type
 
-
+        // CSV manager need the duration as well
         mTaskItems.add(new TaskInterval("9am", 60, "Coded"));
         mTaskItems.add(new TaskInterval("10am", 60, "Read Email"));
         mTaskItems.add(new TaskInterval("11am", 60, "Meetings"));

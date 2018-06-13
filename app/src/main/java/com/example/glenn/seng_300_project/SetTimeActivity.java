@@ -103,6 +103,8 @@ public class SetTimeActivity extends Activity {
                 intent.putExtra("HOUR_KEY", hour);
                 intent.putExtra("MINUTE_KEY", minute);
                 intent.putExtra("FREQUENCY_KEY", interval);
+                // create the CSV to start file here
+                CSVManager CSV = new CSVManager(""); //
                 startActivity(intent);
             }
         });
