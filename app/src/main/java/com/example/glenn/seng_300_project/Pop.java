@@ -190,6 +190,7 @@ public class Pop extends Activity {
      * This class provides a workaround for a threading error in RecycleView.
      * https://stackoverflow.com/questions/31759171/recyclerview-and-java-lang-indexoutofboundsexception-inconsistency-detected-in
      */
+    /*
     public class WrappedLinearLayoutManager extends LinearLayoutManager{
 
         public WrappedLinearLayoutManager(Context context){
@@ -205,7 +206,7 @@ public class Pop extends Activity {
                 Log.e("LinearLayoutManager: ", "Catching threading error in RecycleView");
             }
         }
-    }
+    }*/
 
     @Override
     public void onDestroy(){
