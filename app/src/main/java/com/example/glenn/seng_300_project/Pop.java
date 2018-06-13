@@ -73,7 +73,7 @@ public class Pop extends Activity {
         customTaskList.addAll(Arrays.asList("Coding", "Meeting", "Coffee Break", "Checked Emails", "Worked on the big project for Encana that is due at the end of the quarter", "Ran Errands"));
 
         // for adding a new item to the log of tasks
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        /*listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -85,7 +85,7 @@ public class Pop extends Activity {
                 // views will need to be updated to have the latest item
             }
 
-        });
+        });*/
 
         // previous onClick for add button
         // to add a new task to the tasks list

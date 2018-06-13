@@ -18,21 +18,21 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-public class LogTasks extends Activity {
+public class LogTasks extends NavigationBaseActivity {
     private ListView lvTaskItems;
     private TaskItemsAdapter adapter;
     private List<TaskList> mTaskItems;
-    public static final int POP_WINDOW_REQUEST_CODE = 0;
+    //public static final int POP_WINDOW_REQUEST_CODE = 0;
 
-    private int hour, minute, interval;
+ //   private int hour, minute, interval;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_tasks);
 
-        Intent intent = getIntent();
-
+    //    Intent intent = getIntent();
+/*
         if(intent.getExtras() == null) {
             hour = 0;
             minute = 0;
@@ -48,7 +48,7 @@ public class LogTasks extends Activity {
         c.set(Calendar.HOUR_OF_DAY, hour);
         c.set(Calendar.MINUTE, minute);
         c.set(Calendar.SECOND, 0);
-
+*/
         setContentView(R.layout.activity_log_tasks);
         LogTask logTask = new LogTask(); // new instance of logTask class
 
@@ -73,7 +73,7 @@ public class LogTasks extends Activity {
         lvTaskItems.setAdapter(adapter);
 
         // create method for setting using the view.setBack. based on if task string is empty or not
-        startAlarm(c);
+        //startAlarm(c);
 
         lvTaskItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -84,11 +84,11 @@ public class LogTasks extends Activity {
                 startActivity(intent);
                 //view.setBackgroundColor(Color.parseColor("#3174C6"));
                 startActivity(new Intent(LogTasks.this, Pop.class));
-                view.setBackgroundColor(Color.parseColor("#3174C6"));
+                //view.setBackgroundColor(Color.parseColor("#3174C6"));
             }
         });
     }
-
+/*
     private void startAlarm(Calendar c)
     {
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
@@ -130,6 +130,6 @@ public class LogTasks extends Activity {
             minute = Calendar.getInstance().get(Calendar.MINUTE);
 
         }
-    }
+    }*/
 }
 
