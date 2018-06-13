@@ -43,6 +43,7 @@ public class Pop extends Activity {
     private TaskManager mTaskManager;
     private List<String> customTaskList;
     private String timeValue;
+    private String intervalValue;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -62,7 +63,7 @@ public class Pop extends Activity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             timeValue = extras.getString("time");
-            intervalValue = extras.getString
+            intervalValue = extras.getString("interval");
             //The key argument here must match that used in the other activity
         }
 

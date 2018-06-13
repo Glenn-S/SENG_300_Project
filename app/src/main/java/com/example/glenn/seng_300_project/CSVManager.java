@@ -46,12 +46,11 @@ public class CSVManager {
         String[] line;
         for(TaskInterval t : taskIntervalList){
             if(t.taskName.isEmpty()){
-                line = new String[] {t.startTime, Long.toString(t.durationInMin),""};
+                line = new String[] {t.startTime, t.durationInMin,""};
             }
 
-
             //startTime, duration, Task
-            line = new String[] {t.startTime, Long.toString(t.durationInMin), t.taskName};
+            line = new String[] {t.startTime, t.durationInMin, t.taskName};
             writer.writeNext(line);
         }
 
@@ -68,7 +67,7 @@ public class CSVManager {
                 intervalList.add(null);
             }
             else{
-                intervalList.add(new TaskInterval(nextLine[0], Long.parseLong(nextLine[1]), nextLine[2]));
+                intervalList.add(new TaskInterval(nextLine[0], nextLine[1], nextLine[2]));
             }
 
         }

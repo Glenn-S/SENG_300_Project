@@ -19,24 +19,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/compat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/compat/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/constraint/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/constraint/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/coreui/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/coreui/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/coreutils/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/coreutils/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/fragment/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/fragment/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/graphics/drawable/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/graphics/drawable/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/graphics/drawable/animated/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/graphics/drawable/animated/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/mediacompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/mediacompat/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/transition/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/transition/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v4/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v4/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/glenn/seng_300_project/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/glenn/seng_300_project/R.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/CSVManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/CSVManager.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/Pop.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/Pop.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_log_tasks.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_log_tasks.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskInterval.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskInterval.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,42 +50,29 @@
       <file leaf-file-name="Pop.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/Pop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="64" column="44" lean-forward="false" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+            <state relative-caret-position="459">
+              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
-                <element signature="e#3295#5776#0" expanded="true" />
-                <element signature="e#3996#5117#0" expanded="true" />
-                <element signature="e#5116#5117#0" expanded="true" />
-                <element signature="e#5234#5475#0" expanded="true" />
-                <element signature="e#5474#5475#0" expanded="true" />
-                <element signature="e#5775#5776#0" expanded="true" />
-                <element signature="e#5872#6387#0" expanded="true" />
-                <element signature="e#6386#6387#0" expanded="true" />
-                <element signature="e#6754#6755#0" expanded="true" />
-                <element signature="e#6792#6793#0" expanded="true" />
+                <element signature="e#3342#5823#0" expanded="true" />
+                <element signature="e#4043#5164#0" expanded="true" />
+                <element signature="e#5163#5164#0" expanded="true" />
+                <element signature="e#5281#5522#0" expanded="true" />
+                <element signature="e#5521#5522#0" expanded="true" />
+                <element signature="e#5822#5823#0" expanded="true" />
+                <element signature="e#5919#6434#0" expanded="true" />
+                <element signature="e#6433#6434#0" expanded="true" />
+                <element signature="e#6801#6802#0" expanded="true" />
+                <element signature="e#6839#6840#0" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_log_tasks.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_log_tasks.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="CSVManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/CSVManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="30" column="7" lean-forward="false" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+            <state relative-caret-position="119">
+              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding>
                 <element signature="e#816#817#0" expanded="true" />
                 <element signature="e#856#857#0" expanded="true" />
@@ -109,22 +84,22 @@
       <file leaf-file-name="TaskInterval.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskInterval.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogTasks.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LogTasks.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
-              <caret line="83" column="84" lean-forward="false" selection-start-line="83" selection-start-column="84" selection-end-line="83" selection-end-column="84" />
+            <state relative-caret-position="193">
+              <caret line="90" column="4" lean-forward="true" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2812#3390#0" expanded="true" />
-                <element signature="e#3389#3390#0" expanded="true" />
+                <element signature="e#2830#3408#0" expanded="true" />
+                <element signature="e#3407#3408#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2171,13 +2146,13 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/popwindow.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskList.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskInterval.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/CSVManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskItemsAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/SetTimeActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/Pop.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_log_tasks.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskInterval.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/CSVManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/Pop.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java" />
       </list>
     </option>
   </component>
@@ -2872,17 +2847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/CSVManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="30" column="7" lean-forward="false" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-          <folding>
-            <element signature="e#816#817#0" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskItemsAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -2910,45 +2874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="83" column="84" lean-forward="false" selection-start-line="83" selection-start-column="84" selection-end-line="83" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2812#3390#0" expanded="true" />
-            <element signature="e#3389#3390#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskInterval.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/Pop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="64" column="44" lean-forward="false" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
-          <folding>
-            <element signature="e#3295#5776#0" expanded="true" />
-            <element signature="e#3996#5117#0" expanded="true" />
-            <element signature="e#5116#5117#0" expanded="true" />
-            <element signature="e#5234#5475#0" expanded="true" />
-            <element signature="e#5474#5475#0" expanded="true" />
-            <element signature="e#5775#5776#0" expanded="true" />
-            <element signature="e#5872#6387#0" expanded="true" />
-            <element signature="e#6386#6387#0" expanded="true" />
-            <element signature="e#6754#6755#0" expanded="true" />
-            <element signature="e#6792#6793#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_log_tasks.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2958,6 +2883,56 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/Pop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#3342#5823#0" expanded="true" />
+            <element signature="e#4043#5164#0" expanded="true" />
+            <element signature="e#5163#5164#0" expanded="true" />
+            <element signature="e#5281#5522#0" expanded="true" />
+            <element signature="e#5521#5522#0" expanded="true" />
+            <element signature="e#5822#5823#0" expanded="true" />
+            <element signature="e#5919#6434#0" expanded="true" />
+            <element signature="e#6433#6434#0" expanded="true" />
+            <element signature="e#6801#6802#0" expanded="true" />
+            <element signature="e#6839#6840#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/CSVManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskInterval.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="90" column="4" lean-forward="true" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2830#3408#0" expanded="true" />
+            <element signature="e#3407#3408#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

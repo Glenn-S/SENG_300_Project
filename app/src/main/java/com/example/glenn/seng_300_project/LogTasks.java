@@ -59,15 +59,15 @@ public class LogTasks extends NavigationBaseActivity {
         mTaskItems = new ArrayList<>(); // set new array of task times in unspecified type
 
         // CSV manager need the duration as well
-        mTaskItems.add(new TaskInterval("9am", 60, "Coded"));
-        mTaskItems.add(new TaskInterval("10am", 60, "Read Email"));
-        mTaskItems.add(new TaskInterval("11am", 60, "Meetings"));
-        mTaskItems.add(new TaskInterval("12am", 60, "Read Emails"));
-        mTaskItems.add(new TaskInterval("1pm", 60, "Refactored"));
-        mTaskItems.add(new TaskInterval("2pm", 60, ""));
-        mTaskItems.add(new TaskInterval("3pm", 60, "At Lunch"));
-        mTaskItems.add(new TaskInterval("4pm", 60, "Edited Document"));
-        mTaskItems.add(new TaskInterval("5pm", 60, "Talked with Coworker"));
+        mTaskItems.add(new TaskInterval("9am", "60", "Coded"));
+        mTaskItems.add(new TaskInterval("10am", "60", "Read Email"));
+        mTaskItems.add(new TaskInterval("11am", "60", "Meetings"));
+        mTaskItems.add(new TaskInterval("12am", "60", "Read Emails"));
+        mTaskItems.add(new TaskInterval("1pm", "60", "Refactored"));
+        mTaskItems.add(new TaskInterval("2pm", "60", ""));
+        mTaskItems.add(new TaskInterval("3pm", "60", "At Lunch"));
+        mTaskItems.add(new TaskInterval("4pm", "60", "Edited Document"));
+        mTaskItems.add(new TaskInterval("5pm", "60", "Talked with Coworker"));
 
         //Init adapter
         adapter = new TaskItemsAdapter(getApplicationContext(), mTaskItems);
@@ -88,6 +88,16 @@ public class LogTasks extends NavigationBaseActivity {
             }
         });
     }
+
+    /*
+    For timer interrupt (things to be done inside)
+    read from CSV file to get current list
+    List.add(new TaskInterval(timeOfInterval, "");
+    write the list back to the file
+    update the view
+     */
+
+
 
     private void startAlarm(Calendar c)
     {
