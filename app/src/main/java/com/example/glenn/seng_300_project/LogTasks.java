@@ -143,7 +143,8 @@ public class LogTasks extends NavigationBaseActivity {
             @Override
             public void onClick(View view) {
                 CSVManager csvManager = new CSVManager(csvFile.getPath());
-                verifyStoragePermissions(LogTasks.this);
+
+                verifyStoragePermissions(LogTasks.this); //get permission to use file storage
                 try{
                     //Delete any previous files with the same name
                     csvFile.delete();

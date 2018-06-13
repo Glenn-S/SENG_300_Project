@@ -20,6 +20,9 @@ public class MainActivity extends NavigationBaseActivity {
 
         setContentView(R.layout.activity_main);
 
+        // get permission upon the first opening of the program to use storage
+        // if permission is not granted we should probably close the app
+        LogTasks.verifyStoragePermissions(MainActivity.this);
 
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
         final SharedPreferences.Editor editor = pref.edit();
