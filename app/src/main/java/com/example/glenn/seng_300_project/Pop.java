@@ -58,7 +58,6 @@ public class Pop extends Activity {
         int width = dm.widthPixels;
         int height = dm.heightPixels;
         getWindow().setLayout((int)(width*0.7), (int)(height*0.5));
-        // create instance of CSV manager to write to and from the file
 
         // receive the intent
         Bundle extras = getIntent().getExtras();
@@ -74,7 +73,7 @@ public class Pop extends Activity {
         TaskManager mTasks = new TaskManager(Pop.this);
         customTaskList = mTasks.getTaskList();
         mTasks.closeDB();
-        CSVManager CSV = new CSVManager(""); // pick a name for the CSV file that is common
+        CSVManager CSV = new CSVManager(filename); // pick a name for the CSV file that is common
 
         // list of tasks to populate list with
         listView = (ListView)findViewById(R.id.customTasksList);
@@ -82,15 +81,16 @@ public class Pop extends Activity {
         listView.setAdapter(adapter);
 
         // get value of extra passed from previous activity, this contains the value being passed
-        final String tasksTime = getIntent().getStringExtra("time");
+        //final String tasksTime = getIntent().getStringExtra("time");
         TextView tv = (TextView) findViewById(R.id.tvTime);
-        tv.setText(tasksTime);
+        tv.setText(timeValue);
 
+        // open task manager to read from the database
         mTaskManager = new TaskManager(this);
         mTaskManager.openDB();
         mAdapter = new TaskAdapter(this, mTaskManager);
 
-        //Button to add new task
+        //Button to add new task, also adds new log task
         addBtn = (FloatingActionButton) findViewById(R.id.fabAddTask);
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,16 +115,26 @@ public class Pop extends Activity {
                         mAdapter.add(input.getText().toString());
                         mAdapter.notifyItemInserted(mAdapter.getItemCount() - 1);
                         mAdapter.notifyDataSetChanged();
-                        Toast.makeText(Pop.this, "Added Task", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(Pop.this, "Added Task", Toast.LENGTH_SHORT).show();
 
-                        //SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
-                        //pref.getString("FIRST_KEY");
-                        //pref.getString("LAST_KEY");
-                        //pref.getString("EMAIL_KEY");
-                        final CSVManager CSV= new CSVManager(""); // first name last name day
-                        //CSV.writeTaskList();
-                        // Close after adding
-                        finish();
+                        // format into struct TaskInterval
+                        CSVManager csvManager = new CSVManager(filename);
+                        Log.e("Pop", filename);
+
+                        try{
+                            //Get the list of task intervals and modify the taskName field from "" to the selected task
+                            ArrayList<TaskInterval> taskIntervals = new ArrayList(csvManager.readTaskList());
+                            TaskInterval selectedTaskInterval = taskIntervals.get(intervalPosition);
+                            selectedTaskInterval.taskName = input.getText().toString(); // get the text entered by user and assign it to the task name
+
+                            //Write the list to the csv file
+                            csvManager.writeTaskList(taskIntervals, Pop.this);
+                            finish();
+                        }
+                        catch(IOException e){
+                            //Do nothing
+                            finish();
+                        }
                     }
                 });
 
@@ -144,6 +154,7 @@ public class Pop extends Activity {
 
             }
         });
+
         // for adding a new item to the log of tasks
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -160,6 +171,7 @@ public class Pop extends Activity {
 
                     //Write the list to the csv file
                     csvManager.writeTaskList(taskIntervals, Pop.this);
+                    finish();
                 }
                 catch(IOException e){
                     //Do nothing
@@ -167,11 +179,7 @@ public class Pop extends Activity {
                 }
 
 
-                // need to write the log task item
-                // call setFile to write this item into the list
-                // value passed from intent (time) will be used here with the string at position to write to the file
-                finish();
-                // views will need to be updated to have the latest item
+
             }
 
         });
@@ -182,6 +190,7 @@ public class Pop extends Activity {
      * This class provides a workaround for a threading error in RecycleView.
      * https://stackoverflow.com/questions/31759171/recyclerview-and-java-lang-indexoutofboundsexception-inconsistency-detected-in
      */
+    /*
     public class WrappedLinearLayoutManager extends LinearLayoutManager{
 
         public WrappedLinearLayoutManager(Context context){
@@ -197,7 +206,7 @@ public class Pop extends Activity {
                 Log.e("LinearLayoutManager: ", "Catching threading error in RecycleView");
             }
         }
-    }
+    }*/
 
     @Override
     public void onDestroy(){
