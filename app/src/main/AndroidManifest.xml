@@ -16,16 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LogTasks"></activity>
-
-        <activity android:name=".Pop"
-            android:theme="@style/AppTheme.CustomTheme"
-            ></activity>'
-        <activity android:name=".StartActivity"></activity>
-        <activity android:name=".SetTimeActivity"></activity>
-        <activity android:name=".NavigationBaseActivity"></activity>
-        <activity android:name=".HelpActivity"></activity>
-        <activity android:name=".TaskActivity"></activity>
+        <activity android:name=".LogTasks" />
+        <activity
+            android:name=".Pop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        '
+        <activity android:name=".StartActivity" />
+        <activity android:name=".SetTimeActivity" />
+        <activity android:name=".NavigationBaseActivity" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".TaskActivity" />
     </application>
 
 </manifest>

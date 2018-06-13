@@ -2034,7 +2034,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
@@ -3866,14 +3866,15 @@ public final class R {
     public static final int transition_scene_layoutid_cache=0x7f0800d9;
     public static final int transition_transform=0x7f0800da;
     public static final int tvNextInterval=0x7f0800db;
-    public static final int uniform=0x7f0800dc;
-    public static final int up=0x7f0800dd;
-    public static final int useLogo=0x7f0800de;
-    public static final int view_offset_helper=0x7f0800df;
-    public static final int visible=0x7f0800e0;
-    public static final int withText=0x7f0800e1;
-    public static final int wrap=0x7f0800e2;
-    public static final int wrap_content=0x7f0800e3;
+    public static final int tvTime=0x7f0800dc;
+    public static final int uniform=0x7f0800dd;
+    public static final int up=0x7f0800de;
+    public static final int useLogo=0x7f0800df;
+    public static final int view_offset_helper=0x7f0800e0;
+    public static final int visible=0x7f0800e1;
+    public static final int withText=0x7f0800e2;
+    public static final int wrap=0x7f0800e3;
+    public static final int wrap_content=0x7f0800e4;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -9122,7 +9123,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>

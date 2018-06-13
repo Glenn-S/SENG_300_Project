@@ -1,20 +1,28 @@
 package com.example.glenn.seng_300_project;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.widget.DividerItemDecoration;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.text.InputType;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,11 +38,11 @@ public class Pop extends Activity {
 
     private ListView listView;
     private ArrayAdapter<String> adapter;
-    // set up the add task button
     private FloatingActionButton addBtn;
     private TaskAdapter mAdapter;
     private TaskManager mTaskManager;
-
+    private List<String> customTaskList;
+    private String timeValue;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -47,66 +55,38 @@ public class Pop extends Activity {
         int height = dm.heightPixels;
         getWindow().setLayout((int)(width*0.7), (int)(height*0.5));
         // create instance of CSV manager to write to and from the file
-        //final CSVManager CSV= new CSVManager();
+
+
+
+        // receive the intent
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            timeValue = extras.getString("time");
+            //The key argument here must match that used in the other activity
+        }
 
         // populate the list view
-        final TaskManager mTasks = new TaskManager(Pop.this);
-        final List<String> customTaskList;
-        //customTaskList = new ArrayList<String>();
+        TaskManager mTasks = new TaskManager(Pop.this);
         customTaskList = mTasks.getTaskList();
+        mTasks.closeDB();
         CSVManager CSV = new CSVManager(""); // pick a name for the CSV file that is common
-        //task list for test
-        //customTaskList.addAll(Arrays.asList("Coding", "Meeting", "Coffee Break", "Checked Emails", "Worked on the big project for Encana that is due at the end of the quarter", "Ran Errands"));
 
-        // set button and list properties
-        addBtn = (FloatingActionButton) findViewById(R.id.fabAddTask);
+        // list of tasks to populate list with
         listView = (ListView)findViewById(R.id.customTasksList);
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, customTaskList);
         listView.setAdapter(adapter);
 
         // get value of extra passed from previous activity, this contains the value being passed
         final String tasksTime = getIntent().getStringExtra("time");
-        TextView tv = (TextView) findViewById(R.id.textView3);
+        TextView tv = (TextView) findViewById(R.id.tvTime);
         tv.setText(tasksTime);
 
-        // for test purposes
-        customTaskList.addAll(Arrays.asList("Coding", "Meeting", "Coffee Break", "Checked Emails", "Worked on the big project for Encana that is due at the end of the quarter", "Ran Errands"));
-
-        // for adding a new item to the log of tasks
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // need to write the log task item
-                // call setFile to write this item into the list
-                // value passed from intent (time) will be used here with the string at position to write to the file
-
-                finish();
-                // views will need to be updated to have the latest item
-            }
-
-        });
-
-        // previous onClick for add button
-        // to add a new task to the tasks list
-        /*addBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // call alert dialogue
-
-
-                listView.invalidateViews();
-                Toast.makeText(Pop.this, "Added Task", Toast.LENGTH_SHORT).show();
-                //should this window close after the user has entered their new task?
-                finish();
-            }
-        });*/
-
         mTaskManager = new TaskManager(this);
+        mTaskManager.openDB();
         mAdapter = new TaskAdapter(this, mTaskManager);
 
-
-        // there is an error in here after the user presses ok
+        //Button to add new task
+        addBtn = (FloatingActionButton) findViewById(R.id.fabAddTask);
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -127,10 +107,19 @@ public class Pop extends Activity {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         // when ok, update the list and database
                         // need to call add task
-
                         mAdapter.add(input.getText().toString());
                         mAdapter.notifyItemInserted(mAdapter.getItemCount() - 1);
                         mAdapter.notifyDataSetChanged();
+                        Toast.makeText(Pop.this, "Added Task", Toast.LENGTH_SHORT).show();
+
+                        //SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
+                        //pref.getString("FIRST_KEY");
+                        //pref.getString("LAST_KEY");
+                        //pref.getString("EMAIL_KEY");
+                        final CSVManager CSV= new CSVManager("");
+                        //CSV.writeTaskList();
+                        // Close after adding
+                        finish();
                     }
                 });
 
@@ -148,11 +137,54 @@ public class Pop extends Activity {
 
                 addTaskDialog.show();
 
-                //listView.invalidateViews();
-                //Toast.makeText(Pop.this, "Added Task", Toast.LENGTH_SHORT).show();
-                //should this window close after the user has entered their new task?
-                //finish();
             }
         });
+        // for adding a new item to the log of tasks
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // need to write the log task item
+                // call setFile to write this item into the list
+                // value passed from intent (time) will be used here with the string at position to write to the file
+                finish();
+                // views will need to be updated to have the latest item
+            }
+
+        });
+
+    }
+    /**
+     * This class provides a workaround for a threading error in RecycleView.
+     * https://stackoverflow.com/questions/31759171/recyclerview-and-java-lang-indexoutofboundsexception-inconsistency-detected-in
+     */
+    public class WrappedLinearLayoutManager extends LinearLayoutManager{
+
+        public WrappedLinearLayoutManager(Context context){
+            super(context);
+        }
+
+        @Override
+        public void onLayoutChildren(RecyclerView.Recycler recycler, RecyclerView.State state){
+            try{
+                super.onLayoutChildren(recycler,state);
+            }
+            catch(IndexOutOfBoundsException e){
+                Log.e("LinearLayoutManager: ", "Catching threading error in RecycleView");
+            }
+        }
+    }
+
+    @Override
+    public void onDestroy(){
+        super.onDestroy();
+        mTaskManager.closeDB();
     }
 }
+
+/*
+
+        // for test purposes
+        //customTaskList.addAll(Arrays.asList("Coding", "Meeting", "Coffee Break", "Checked Emails", "Worked on the big project for Encana that is due at the end of the quarter", "Ran Errands"));
+
+ */

@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class StartActivity extends Activity {
+public class StartActivity extends NavigationBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

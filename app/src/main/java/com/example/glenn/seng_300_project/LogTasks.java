@@ -18,12 +18,10 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-public class LogTasks extends Activity {
+public class LogTasks extends NavigationBaseActivity {
     private ListView lvTaskItems;
     private TaskItemsAdapter adapter;
-    private List<TaskList> mTaskItems;
-    public static final int POP_WINDOW_REQUEST_CODE = 0;
-
+    private List<TaskInterval> mTaskItems;
     private int hour, minute, interval;
 
     @Override
@@ -58,32 +56,32 @@ public class LogTasks extends Activity {
         lvTaskItems = (ListView)findViewById(R.id.list_view);
 
         mTaskItems = new ArrayList<>(); // set new array of task times in unspecified type
-        mTaskItems.add(new TaskList("9am", "Coded"));
-        mTaskItems.add(new TaskList("10am", "Read Email"));
-        mTaskItems.add(new TaskList("11am", "Meetings"));
-        mTaskItems.add(new TaskList("12am", "Read Emails"));
-        mTaskItems.add(new TaskList("1pm", "Refactored"));
-        mTaskItems.add(new TaskList("2pm", ""));
-        mTaskItems.add(new TaskList("3pm", "At Lunch"));
-        mTaskItems.add(new TaskList("4pm", "Edited Document"));
-        mTaskItems.add(new TaskList("5pm", "Talked with Coworker"));
+
+
+        mTaskItems.add(new TaskInterval("9am", 60, "Coded"));
+        mTaskItems.add(new TaskInterval("10am", 60, "Read Email"));
+        mTaskItems.add(new TaskInterval("11am", 60, "Meetings"));
+        mTaskItems.add(new TaskInterval("12am", 60, "Read Emails"));
+        mTaskItems.add(new TaskInterval("1pm", 60, "Refactored"));
+        mTaskItems.add(new TaskInterval("2pm", 60, ""));
+        mTaskItems.add(new TaskInterval("3pm", 60, "At Lunch"));
+        mTaskItems.add(new TaskInterval("4pm", 60, "Edited Document"));
+        mTaskItems.add(new TaskInterval("5pm", 60, "Talked with Coworker"));
 
         //Init adapter
         adapter = new TaskItemsAdapter(getApplicationContext(), mTaskItems);
         lvTaskItems.setAdapter(adapter);
 
         // create method for setting using the view.setBack. based on if task string is empty or not
-        startAlarm(c);
+        //startAlarm(c);
 
         lvTaskItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(LogTasks.this, Pop.class);
                 // pass the time string to the pop class
-                intent.putExtra("time", mTaskItems.get(position).getTime());
+                intent.putExtra("time", mTaskItems.get(position).startTime);
                 startActivity(intent);
-                //view.setBackgroundColor(Color.parseColor("#3174C6"));
-                startActivity(new Intent(LogTasks.this, Pop.class));
                 view.setBackgroundColor(Color.parseColor("#3174C6"));
             }
         });

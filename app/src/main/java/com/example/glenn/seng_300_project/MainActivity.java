@@ -1,5 +1,6 @@
 package com.example.glenn.seng_300_project;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ public class MainActivity extends NavigationBaseActivity {
         super.setContentView(R.layout.activity_main);
 
         setContentView(R.layout.activity_main);
+
 
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
         final SharedPreferences.Editor editor = pref.edit();

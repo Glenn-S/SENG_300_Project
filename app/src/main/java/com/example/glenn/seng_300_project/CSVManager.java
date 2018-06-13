@@ -17,18 +17,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CSVManager {
-
+    /*
     public class TaskInterval{
         public String taskName;
-        public Time startTime;
+        public String startTime;
         public long durationInMin;
 
-        public TaskInterval(Time start, long duration, String task){
+        public TaskInterval(String start, long duration, String task){
             taskName = task;
             startTime = start;
             durationInMin = duration;
         }
-    }
+    }*/
 
     String filename;
 
@@ -43,16 +43,15 @@ public class CSVManager {
      */
     public void writeTaskList(List<TaskInterval> taskIntervalList) throws IOException{
         CSVWriter writer = new CSVWriter(new FileWriter(filename), '\t', '"','"',"\n");
-
+        String[] line;
         for(TaskInterval t : taskIntervalList){
-
-            if(t==null){
-                String [] line = {"","",""};
+            if(t.taskName.isEmpty()){
+                line = new String[] {t.startTime, Long.toString(t.durationInMin),""};
             }
 
 
             //startTime, duration, Task
-            String [] line = {t.startTime.toString(), Long.toString(t.durationInMin), t.taskName};
+            line = new String[] {t.startTime, Long.toString(t.durationInMin), t.taskName};
             writer.writeNext(line);
         }
 
@@ -69,7 +68,7 @@ public class CSVManager {
                 intervalList.add(null);
             }
             else{
-                intervalList.add(new TaskInterval(Time.valueOf(nextLine[0]), Long.parseLong(nextLine[1]), nextLine[2]));
+                intervalList.add(new TaskInterval(nextLine[0], Long.parseLong(nextLine[1]), nextLine[2]));
             }
 
         }
