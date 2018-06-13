@@ -96,17 +96,18 @@ public class LogTasks extends NavigationBaseActivity {
         // create method for setting using the view.setBack. based on if task string is empty or not
         //startAlarm(c);
 
+
+        // call the pop up to select a task
         lvTaskItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(LogTasks.this, Pop.class);
-                // pass the time string to the pop class
                 intent.putExtra("interval", mTaskItems.get(position).durationInMin);
                 intent.putExtra("time", mTaskItems.get(position).startTime);
                 intent.putExtra("filename", csvFile.getPath());
                 intent.putExtra("intervalPosition", position);
                 startActivity(intent);
-                view.setBackgroundColor(Color.parseColor("#3174C6"));
+                //view.setBackgroundColor(Color.parseColor("#3174C6"));
             }
         });
 
