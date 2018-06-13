@@ -29,6 +29,7 @@ import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -44,6 +45,8 @@ public class Pop extends Activity {
     private List<String> customTaskList;
     private String timeValue;
     private String intervalValue;
+    private String filename;
+    private int intervalPosition;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -62,6 +65,8 @@ public class Pop extends Activity {
         if (extras != null) {
             timeValue = extras.getString("time");
             intervalValue = extras.getString("interval");
+            filename = extras.getString("filename");
+            intervalPosition = extras.getInt("intervalPosition");
             //The key argument here must match that used in the other activity
         }
 
@@ -144,6 +149,24 @@ public class Pop extends Activity {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                CSVManager csvManager = new CSVManager(filename);
+                Log.e("Pop", filename);
+
+                try{
+                    //Get the list of task intervals and modify the taskName field to the selected task
+                    ArrayList<TaskInterval> taskIntervals = new ArrayList(csvManager.readTaskList());
+                    TaskInterval selectedTaskInterval = taskIntervals.get(intervalPosition);
+                    selectedTaskInterval.taskName = customTaskList.get(position);
+
+                    //Write the list to the csv file
+                    csvManager.writeTaskList(taskIntervals, Pop.this);
+                }
+                catch(IOException e){
+                    //Do nothing
+                    finish();
+                }
+
+
                 // need to write the log task item
                 // call setFile to write this item into the list
                 // value passed from intent (time) will be used here with the string at position to write to the file
@@ -154,6 +177,7 @@ public class Pop extends Activity {
         });
 
     }
+
     /**
      * This class provides a workaround for a threading error in RecycleView.
      * https://stackoverflow.com/questions/31759171/recyclerview-and-java-lang-indexoutofboundsexception-inconsistency-detected-in
