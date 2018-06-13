@@ -57,8 +57,6 @@ public class Pop extends Activity {
         getWindow().setLayout((int)(width*0.7), (int)(height*0.5));
         // create instance of CSV manager to write to and from the file
 
-
-
         // receive the intent
         Bundle extras = getIntent().getExtras();
         if (extras != null) {

@@ -30,8 +30,6 @@ public class LogTasks extends NavigationBaseActivity {
         setContentView(R.layout.activity_log_tasks);
 
         Intent intent = getIntent();
-
-
         if(intent.getExtras() == null) {
             hour = 0;
             minute = 0;
@@ -48,6 +46,14 @@ public class LogTasks extends NavigationBaseActivity {
         c.set(Calendar.MINUTE, minute);
         c.set(Calendar.SECOND, 0);
 
+        //This is temporary
+        hour = c.get(Calendar.HOUR_OF_DAY);
+        minute = c.get(Calendar.MINUTE);
+        hour = 12;
+        minute = 00;
+        TextView timeOfNext = (TextView) findViewById(R.id.timeOfNext);
+        timeOfNext.setText(hour + ":" + minute);
+
         setContentView(R.layout.activity_log_tasks);
         LogTask logTask = new LogTask(); // new instance of logTask class
 
@@ -58,6 +64,7 @@ public class LogTasks extends NavigationBaseActivity {
 
         mTaskItems = new ArrayList<>(); // set new array of task times in unspecified type
 
+        // Test values
         // CSV manager need the duration as well
         mTaskItems.add(new TaskInterval("9am", "60", "Coded"));
         mTaskItems.add(new TaskInterval("10am", "60", "Read Email"));
@@ -94,6 +101,7 @@ public class LogTasks extends NavigationBaseActivity {
     read from CSV file to get current list
     List.add(new TaskInterval(timeOfInterval, "");
     write the list back to the file
+    Update Time of Next Interval
     update the view
      */
 
