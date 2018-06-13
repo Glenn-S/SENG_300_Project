@@ -9,11 +9,9 @@
     <ListView
         android:id="@+id/list_view"
         android:layout_width="313dp"
-        android:layout_height="293dp"
+        android:layout_height="241dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:scrollbars="vertical"
@@ -23,7 +21,7 @@
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.846" />
+        app:layout_constraintVertical_bias="0.812" />
 
     <TextView
         android:id="@+id/tvNextInterval"
@@ -55,5 +53,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNextInterval"
         app:layout_constraintVertical_bias="0.257" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="?android:attr/colorPrimary"
+        app:srcCompat="@android:drawable/ic_menu_send"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="508dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -116,7 +116,7 @@ public class Pop extends Activity {
                         //pref.getString("FIRST_KEY");
                         //pref.getString("LAST_KEY");
                         //pref.getString("EMAIL_KEY");
-                        final CSVManager CSV= new CSVManager("");
+                        final CSVManager CSV= new CSVManager(""); // first name last name day
                         //CSV.writeTaskList();
                         // Close after adding
                         finish();
