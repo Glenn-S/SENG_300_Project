@@ -37,6 +37,8 @@ public class LogTasks extends NavigationBaseActivity {
     private List<TaskInterval> mTaskItems;
     private int hour, minute, interval;
     private File csvFile;
+    private static LogTasks instance;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,13 +48,14 @@ public class LogTasks extends NavigationBaseActivity {
         if(intent.getExtras() == null) {
             hour = 0;
             minute = 0;
+            interval = 0;
         }
         else
         {
             Bundle extras = getIntent().getExtras();
             hour = extras.getInt("HOUR_KEY");
             minute = extras.getInt("MINUTE_KEY");
-            interval = extras.getInt("INTERVAL_KEY");
+            interval = extras.getInt("FREQUENCY_KEY");
         }
         Calendar c = Calendar.getInstance();
         c.set(Calendar.HOUR_OF_DAY, hour);
@@ -94,7 +97,7 @@ public class LogTasks extends NavigationBaseActivity {
         lvTaskItems.setAdapter(adapter);
 
         // create method for setting using the view.setBack. based on if task string is empty or not
-        //startAlarm(c);
+        startAlarm(c);
 
 
         // call the pop up to select a task
@@ -238,7 +241,7 @@ public class LogTasks extends NavigationBaseActivity {
         minute = c.get(Calendar.MINUTE);
         TextView timeView = (TextView) findViewById(R.id.timeOfNext);
         timeView.setText(hour + ":" + minute);
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), 1000*60*interval, pendingIntent);
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), 5000, pendingIntent);
 
     }
 
@@ -295,6 +298,20 @@ public class LogTasks extends NavigationBaseActivity {
                     REQUEST_EXTERNAL_STORAGE
             );
         }
+    }
+    public static LogTasks getInstance() {
+        return instance;
+    }
+
+    public void updateTheTextView(final String t)
+    {
+        LogTasks.this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                TextView textView = (TextView) findViewById(R.id.timeOfNext);
+                textView.setText(t);
+            }
+        });
     }
 }
 
