@@ -11,9 +11,9 @@ import java.util.List;
 public class TaskItemsAdapter extends BaseAdapter {
 
     private Context mContext;
-    private List<TaskList> mTaskItems;
+    private List<TaskInterval> mTaskItems;
 
-    public TaskItemsAdapter(Context mContext, List<TaskList> mTaskItems) {
+    public TaskItemsAdapter(Context mContext, List<TaskInterval> mTaskItems) {
         this.mContext = mContext;
         this.mTaskItems = mTaskItems;
     }
@@ -62,10 +62,10 @@ public class TaskItemsAdapter extends BaseAdapter {
         TextView taskTime = (TextView) v.findViewById(R.id.list_time);
         TextView taskItem = (TextView) v.findViewById(R.id.list_item);
         // Set test for TextView
-        taskItem.setText(mTaskItems.get(position).getTask());
-        taskTime.setText(mTaskItems.get(position).getTime());
+        taskItem.setText(mTaskItems.get(position).taskName);
+        taskTime.setText(mTaskItems.get(position).startTime);
         // Save product id to tag
-        v.setTag(mTaskItems.get(position).getTime());
+        v.setTag(mTaskItems.get(position).startTime);
 
         return v;
     }

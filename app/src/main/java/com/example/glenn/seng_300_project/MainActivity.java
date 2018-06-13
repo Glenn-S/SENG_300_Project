@@ -20,6 +20,7 @@ public class MainActivity extends NavigationBaseActivity {
 
         setContentView(R.layout.activity_main);
 
+
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
         final SharedPreferences.Editor editor = pref.edit();
 

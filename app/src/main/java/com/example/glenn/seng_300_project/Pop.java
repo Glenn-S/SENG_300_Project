@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -54,7 +55,8 @@ public class Pop extends Activity {
         int height = dm.heightPixels;
         getWindow().setLayout((int)(width*0.7), (int)(height*0.5));
         // create instance of CSV manager to write to and from the file
-        //final CSVManager CSV= new CSVManager();
+
+
 
         // receive the intent
         Bundle extras = getIntent().getExtras();
@@ -66,6 +68,7 @@ public class Pop extends Activity {
         // populate the list view
         TaskManager mTasks = new TaskManager(Pop.this);
         customTaskList = mTasks.getTaskList();
+        mTasks.closeDB();
         CSVManager CSV = new CSVManager(""); // pick a name for the CSV file that is common
 
         // list of tasks to populate list with
@@ -104,12 +107,17 @@ public class Pop extends Activity {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         // when ok, update the list and database
                         // need to call add task
-
                         mAdapter.add(input.getText().toString());
                         mAdapter.notifyItemInserted(mAdapter.getItemCount() - 1);
                         mAdapter.notifyDataSetChanged();
                         Toast.makeText(Pop.this, "Added Task", Toast.LENGTH_SHORT).show();
 
+                        //SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
+                        //pref.getString("FIRST_KEY");
+                        //pref.getString("LAST_KEY");
+                        //pref.getString("EMAIL_KEY");
+                        final CSVManager CSV= new CSVManager("");
+                        //CSV.writeTaskList();
                         // Close after adding
                         finish();
                     }
