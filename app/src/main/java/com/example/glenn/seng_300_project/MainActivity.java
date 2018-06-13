@@ -20,6 +20,9 @@ public class MainActivity extends NavigationBaseActivity {
 
         setContentView(R.layout.activity_main);
 
+        // get permission upon the first opening of the program to use storage
+        // if permission is not granted we should probably close the app
+        LogTasks.verifyStoragePermissions(MainActivity.this);
 
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
         final SharedPreferences.Editor editor = pref.edit();
@@ -41,9 +44,9 @@ public class MainActivity extends NavigationBaseActivity {
                     textView4.setText("Please fill in all required fields.");
                 else
                 {
-                    editor.putString("FIRST_KEY", firstName);
-                    editor.putString("LAST_KEY", lastName);
-                    editor.putString("EMAIL_KEY", email);
+                    editor.putString("FIRST_KEY", firstName).apply();
+                    editor.putString("LAST_KEY", lastName).apply();
+                    editor.putString("EMAIL_KEY", email).apply();
                     startActivity(new Intent(MainActivity.this, StartActivity.class));
                 }
 

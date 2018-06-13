@@ -7,6 +7,5 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="openCSV_link"><a href="http://opencsv.sourceforge.net/license.html">OpenCSV</a></string>
-
+    <string name="openCSV"><a href="http://opencsv.sourceforge.net/license.html">opencsv</a></string>
 </resources>

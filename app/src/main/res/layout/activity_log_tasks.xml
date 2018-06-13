@@ -9,7 +9,7 @@
     <ListView
         android:id="@+id/list_view"
         android:layout_width="313dp"
-        android:layout_height="241dp"
+        android:layout_height="289dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -21,7 +21,7 @@
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.812" />
+        app:layout_constraintVertical_bias="0.744" />
 
     <TextView
         android:id="@+id/tvNextInterval"
@@ -47,6 +47,7 @@
         android:layout_marginTop="8dp"
         android:text="12:00"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/list_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -55,13 +56,18 @@
         app:layout_constraintVertical_bias="0.257" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
+        android:id="@+id/sendMail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:clickable="true"
         app:backgroundTint="?android:attr/colorPrimary"
-        app:srcCompat="@android:drawable/ic_menu_send"
-        tools:layout_editor_absoluteX="306dp"
-        tools:layout_editor_absoluteY="508dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_send" />
 
 </android.support.constraint.ConstraintLayout>
