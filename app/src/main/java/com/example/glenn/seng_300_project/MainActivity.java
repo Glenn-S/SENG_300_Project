@@ -41,9 +41,9 @@ public class MainActivity extends NavigationBaseActivity {
                     textView4.setText("Please fill in all required fields.");
                 else
                 {
-                    editor.putString("FIRST_KEY", firstName);
-                    editor.putString("LAST_KEY", lastName);
-                    editor.putString("EMAIL_KEY", email);
+                    editor.putString("FIRST_KEY", firstName).apply();
+                    editor.putString("LAST_KEY", lastName).apply();
+                    editor.putString("EMAIL_KEY", email).apply();
                     startActivity(new Intent(MainActivity.this, StartActivity.class));
                 }
 

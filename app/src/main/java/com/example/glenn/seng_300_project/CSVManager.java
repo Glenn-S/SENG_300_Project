@@ -1,5 +1,7 @@
 package com.example.glenn.seng_300_project;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.util.Log;
 
 import com.opencsv.CSVIterator;
@@ -41,8 +43,18 @@ public class CSVManager {
      * @param taskIntervalList list of task intervals
      * @throws IOException
      */
-    public void writeTaskList(List<TaskInterval> taskIntervalList) throws IOException{
-        CSVWriter writer = new CSVWriter(new FileWriter(filename), '\t', '"','"',"\n");
+    public void writeTaskList(List<TaskInterval> taskIntervalList, Context context) throws IOException{
+        CSVWriter writer = new CSVWriter(new FileWriter(filename));
+
+        SharedPreferences pref = context.getSharedPreferences("MyPref", 0); // 0 - for private mode
+        final String firstName = pref.getString("FIRST_KEY", "no first name");
+        final String lastName = pref.getString("LAST_KEY", "no last name");
+        final String email = pref.getString("EMAIL_KEY", "no@email");
+
+
+        String[] header = new String[]{firstName, lastName, email};
+        writer.writeNext(header);
+
         String[] line;
         for(TaskInterval t : taskIntervalList){
             if(t.taskName.isEmpty()){
@@ -61,6 +73,10 @@ public class CSVManager {
         CSVReader reader = new CSVReader(new FileReader(filename));
         ArrayList<TaskInterval> intervalList = new ArrayList<TaskInterval>();
 
+
+        //Skip the header
+        reader.readNext();
+
         String [] nextLine;
         while ((nextLine = reader.readNext()) != null) {
             if(nextLine[0] == ""){
@@ -71,6 +87,9 @@ public class CSVManager {
             }
 
         }
+
+
+        reader.close();
 
         return intervalList;
     }
