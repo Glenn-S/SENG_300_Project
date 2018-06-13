@@ -13,6 +13,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.InputType;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.EditText;
@@ -22,7 +23,7 @@ import android.widget.LinearLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TaskActivity extends NavigationBaseActivity {
+public class TaskActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
     private TaskAdapter mAdapter;
@@ -33,7 +34,10 @@ public class TaskActivity extends NavigationBaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.setContentView(R.layout.activity_task);
+        setContentView(R.layout.activity_task);
+
+        //Enable back button on action bar to go back to previous activity
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycle_view);
 
@@ -96,6 +100,7 @@ public class TaskActivity extends NavigationBaseActivity {
             }
         });
 
+
     }
 
     /**
@@ -116,6 +121,20 @@ public class TaskActivity extends NavigationBaseActivity {
             catch(IndexOutOfBoundsException e){
                 Log.e("LinearLayoutManager: ", "Catching threading error in RecycleView");
             }
+        }
+    }
+
+    /**
+     * Back button in action bar moves application back to previous page
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch(item.getItemId()){
+            case android.R.id.home:
+                finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 

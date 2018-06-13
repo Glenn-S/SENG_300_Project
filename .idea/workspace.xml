@@ -1,91 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AndroidLayouts">
-    <shared>
-      <config />
-    </shared>
-  </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8f95d31-6f87-4217-8d60-b82b41fdbc9e" name="Default" comment="Merge branches 'josephNewBranch' and 'master' of https://github.com/Glenn-S/SENG_300_Project&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.4/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.4/fileHashes/fileHashes.lock&#10;#&#9;.gradle/4.4/javaCompile/javaCompile.lock&#10;#&#9;.gradle/4.4/taskHistory/taskHistory.bin&#10;#&#9;.gradle/4.4/taskHistory/taskHistory.lock&#10;#&#9;.gradle/buildOutputCleanup/buildOutputCleanup.lock&#10;#&#9;.idea/caches/build_file_checksums.ser&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java&#10;#&#9;app/src/main/java/com/example/glenn/seng_300_project/MainActivity.java&#10;#&#9;app/src/main/java/com/example/glenn/seng_300_project/SetTimeActivity.java&#10;#&#9;app/src/main/res/layout/activity_main.xml&#10;#&#9;local.properties">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_0_jar.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/AboutActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_about.xml" />
+    <list default="true" id="44205e86-7570-439c-90d3-3ad951f1eaca" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-<<<<<<< HEAD
-=======
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___C__Users_glenn_AndroidStudioProjects_SENG_300_Project_app_libs_opencsv_4_2_jar_unspecified_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_27_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_27_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_27_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_27_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_27_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_27_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_27_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_27_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_27_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_27_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_27_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_27_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_27_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_27_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_27_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_27_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" />
-=======
+      <change beforePath="$PROJECT_DIR$/SENG_300_Project.iml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/example/glenn/seng_300_project/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/example/glenn/seng_300_project/BuildConfig.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/compat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/compat/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/constraint/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/constraint/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/coreui/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/coreui/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/coreutils/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/coreutils/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/fragment/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/fragment/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/graphics/drawable/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/graphics/drawable/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/graphics/drawable/animated/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/graphics/drawable/animated/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/mediacompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/mediacompat/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/transition/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/transition/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v4/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v4/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/glenn/seng_300_project/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/glenn/seng_300_project/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/CSVManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/CSVManager.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/AboutActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/AboutActivity.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/MainActivity.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/NavigationBaseActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/NavigationBaseActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/Pop.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/Pop.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_log_tasks.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_log_tasks.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskActivity.java" />
       <change beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -107,173 +42,24 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="43" column="47" lean-forward="false" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogTasks.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="425">
-              <caret line="57" column="71" lean-forward="false" selection-start-line="57" selection-start-column="71" selection-end-line="57" selection-end-column="71" />
+            <state relative-caret-position="510">
+              <caret line="45" column="68" lean-forward="false" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
               <folding>
-                <element signature="e#6799#6800#0" expanded="true" />
-                <element signature="e#6837#6838#0" expanded="true" />
-=======
-            <state relative-caret-position="340">
-              <caret line="154" column="20" lean-forward="false" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="20" />
-              <folding>
-                <element signature="e#3587#4292#0" expanded="true" />
-                <element signature="e#4291#4292#0" expanded="true" />
-                <element signature="e#5653#6529#0" expanded="true" />
-                <element signature="e#6528#6529#0" expanded="true" />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
+                <element signature="e#1609#1847#0" expanded="true" />
+                <element signature="e#1846#1847#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CSVManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/CSVManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="340">
-              <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-=======
-            <state relative-caret-position="953">
-              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-              <folding>
-                <element signature="e#890#891#0" expanded="true" />
-                <element signature="e#930#931#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="57" lean-forward="false" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogTask.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="595">
-              <caret line="51" column="18" lean-forward="false" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-=======
-            <state relative-caret-position="502">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <element signature="e#437#455#0" expanded="true" />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pop.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/Pop.java">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="1581">
-              <caret line="102" column="46" lean-forward="false" selection-start-line="102" selection-start-column="46" selection-end-line="102" selection-end-column="46" />
-=======
-            <state relative-caret-position="207">
-              <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AboutActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/AboutActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NavigationBaseActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/NavigationBaseActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>mTasks</find>
-      <find>TaskList</find>
-      <find>12</find>
-      <find>onDestro</find>
-      <find>HOUR</find>
-      <find>CSV</find>
-      <find>adapter</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="AnthonySurface" />
-      </map>
-    </option>
-    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -2288,36 +2074,11 @@
       </map>
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/StartActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/popwindow.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskList.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskItemsAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/SetTimeActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskInterval.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/AboutActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/NavigationBaseActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_about.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_log_tasks.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/CSVManager.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/Pop.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="391" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="980" />
-    <option name="height" value="1030" />
+    <option name="width" value="1936" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectView">
     <navigator currentView="AndroidView" proportions="" version="1">
@@ -2334,11 +2095,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
       <pane id="PackagesPane" />
-=======
-      <pane id="ProjectPane" />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2346,61 +2103,18 @@
               <item name="SENG_300_ProjectRevised" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
             </path>
-            <path>
-              <item name="SENG_300_ProjectRevised" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="SENG_300_ProjectRevised" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="seng_300_project" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SENG_300_ProjectRevised" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="seng_300_project" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SENG_300_ProjectRevised" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="seng_300_project" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SENG_300_ProjectRevised" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-<<<<<<< HEAD
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane" />
-=======
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="device.picker.selection" value="9885e6484432394d51" />
-    <property name="android.profiler.active" value="true" />
-    <property name="android.project.structure.last.selected" value="SDK Location" />
-    <property name="android.project.structure.proportion" value="0.15" />
-  </component>
-  <component name="RecentsManager">
-    <key name="android.template.packageName">
-      <recent name="com.example.glenn.seng_300_project" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2438,7 +2152,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -2495,18 +2209,6 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
-      <envs />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="SENG_300_ProjectRevised" />
       <envs />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -2570,56 +2272,41 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e8f95d31-6f87-4217-8d60-b82b41fdbc9e" name="Default" comment="" />
-      <created>1528843672452</created>
+      <changelist id="44205e86-7570-439c-90d3-3ad951f1eaca" name="Default" comment="" />
+      <created>1528925201856</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1528843672452</updated>
+      <updated>1528925201856</updated>
     </task>
+    <task id="LOCAL-00001" summary="Merge branch 'glenn' of https://github.com/Glenn-S/SENG_300_Project into Anthony&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.4/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.4/fileHashes/fileHashes.lock&#10;#&#9;.gradle/4.4/javaCompile/classAnalysis.bin&#10;#&#9;.gradle/4.4/javaCompile/javaCompile.lock&#10;#&#9;.gradle/4.4/javaCompile/taskHistory.bin&#10;#&#9;.gradle/4.4/taskHistory/taskHistory.bin&#10;#&#9;.gradle/4.4/taskHistory/taskHistory.lock&#10;#&#9;.gradle/buildOutputCleanup/buildOutputCleanup.lock&#10;#&#9;.idea/workspace.xml">
+      <created>1528925317910</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1528925317910</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-=======
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298077" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3480769" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06923077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2521322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21801706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2631,954 +2318,40 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32884616" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884616" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2521322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Merge branches 'josephNewBranch' and 'master' of https://github.com/Glenn-S/SENG_300_Project&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.4/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.4/fileHashes/fileHashes.lock&#10;#&#9;.gradle/4.4/javaCompile/javaCompile.lock&#10;#&#9;.gradle/4.4/taskHistory/taskHistory.bin&#10;#&#9;.gradle/4.4/taskHistory/taskHistory.lock&#10;#&#9;.gradle/buildOutputCleanup/buildOutputCleanup.lock&#10;#&#9;.idea/caches/build_file_checksums.ser&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java&#10;#&#9;app/src/main/java/com/example/glenn/seng_300_project/MainActivity.java&#10;#&#9;app/src/main/java/com/example/glenn/seng_300_project/SetTimeActivity.java&#10;#&#9;app/src/main/res/layout/activity_main.xml&#10;#&#9;local.properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branches 'josephNewBranch' and 'master' of https://github.com/Glenn-S/SENG_300_Project&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.4/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.4/fileHashes/fileHashes.lock&#10;#&#9;.gradle/4.4/javaCompile/javaCompile.lock&#10;#&#9;.gradle/4.4/taskHistory/taskHistory.bin&#10;#&#9;.gradle/4.4/taskHistory/taskHistory.lock&#10;#&#9;.gradle/buildOutputCleanup/buildOutputCleanup.lock&#10;#&#9;.idea/caches/build_file_checksums.ser&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java&#10;#&#9;app/src/main/java/com/example/glenn/seng_300_project/MainActivity.java&#10;#&#9;app/src/main/java/com/example/glenn/seng_300_project/SetTimeActivity.java&#10;#&#9;app/src/main/res/layout/activity_main.xml&#10;#&#9;local.properties" />
+    <MESSAGE value="Merge branch 'glenn' of https://github.com/Glenn-S/SENG_300_Project into Anthony&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.4/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.4/fileHashes/fileHashes.lock&#10;#&#9;.gradle/4.4/javaCompile/classAnalysis.bin&#10;#&#9;.gradle/4.4/javaCompile/javaCompile.lock&#10;#&#9;.gradle/4.4/javaCompile/taskHistory.bin&#10;#&#9;.gradle/4.4/taskHistory/taskHistory.bin&#10;#&#9;.gradle/4.4/taskHistory/taskHistory.lock&#10;#&#9;.gradle/buildOutputCleanup/buildOutputCleanup.lock&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'glenn' of https://github.com/Glenn-S/SENG_300_Project into Anthony&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.4/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.4/fileHashes/fileHashes.lock&#10;#&#9;.gradle/4.4/javaCompile/classAnalysis.bin&#10;#&#9;.gradle/4.4/javaCompile/javaCompile.lock&#10;#&#9;.gradle/4.4/javaCompile/taskHistory.bin&#10;#&#9;.gradle/4.4/taskHistory/taskHistory.bin&#10;#&#9;.gradle/4.4/taskHistory/taskHistory.lock&#10;#&#9;.gradle/buildOutputCleanup/buildOutputCleanup.lock&#10;#&#9;.idea/workspace.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/NavigationBaseActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/SetTimeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="104" column="16" lean-forward="false" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_log_tasks.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/HelpActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-=======
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/SetTimeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2375">
-          <caret line="104" column="16" lean-forward="false" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_log_tasks.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-<<<<<<< HEAD
-            <element signature="imports" expanded="true" />
-=======
-            <element signature="e#3587#4292#0" expanded="true" />
-            <element signature="e#4291#4292#0" expanded="true" />
-            <element signature="e#5653#6529#0" expanded="true" />
-            <element signature="e#6528#6529#0" expanded="true" />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_log_tasks.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/SetTimeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="104" column="16" lean-forward="false" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/HelpActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_view_custom_layout.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-<<<<<<< HEAD
-            <element signature="imports" expanded="true" />
-=======
-            <element signature="e#3587#4292#0" expanded="true" />
-            <element signature="e#4291#4292#0" expanded="true" />
-            <element signature="e#5653#6529#0" expanded="true" />
-            <element signature="e#6528#6529#0" expanded="true" />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
+            <element signature="e#1609#1847#0" expanded="true" />
+            <element signature="e#1846#1847#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/SetTimeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2375">
-          <caret line="104" column="16" lean-forward="false" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_log_tasks.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="510">
+          <caret line="45" column="68" lean-forward="false" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
           <folding>
-<<<<<<< HEAD
-            <element signature="imports" expanded="true" />
-=======
-            <element signature="e#3587#4292#0" expanded="true" />
-            <element signature="e#4291#4292#0" expanded="true" />
-            <element signature="e#5653#6529#0" expanded="true" />
-            <element signature="e#6528#6529#0" expanded="true" />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_start.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/example/glenn/seng_300_project/LogTaskTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_nav.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/HelpActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/Test.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_test.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="68">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/StartActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="57" lean-forward="false" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/Test.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_test.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="11" lean-forward="false" selection-start-line="82" selection-start-column="11" selection-end-line="82" selection-end-column="11" />
-=======
-        <state relative-caret-position="1394">
-          <caret line="82" column="11" lean-forward="false" selection-start-line="82" selection-start-column="11" selection-end-line="82" selection-end-column="11" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/task.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskDBManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_task.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskList.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="442">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-=======
-        <state relative-caret-position="85">
-          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskItemsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-<<<<<<< HEAD
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-=======
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_set_time.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskInterval.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/SetTimeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="-34">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-=======
-        <state relative-caret-position="1615">
-          <caret line="104" column="16" lean-forward="false" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
-          <folding />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_log_tasks.xml">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="136">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskDBManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-=======
-        <state relative-caret-position="986">
-          <caret line="58" column="33" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_about.xml">
-      <provider editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-=======
-        <state relative-caret-position="425">
-          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="88" lean-forward="false" selection-start-line="9" selection-start-column="88" selection-end-line="9" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/StartActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="57" lean-forward="false" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/popwindow.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/TaskManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="255">
-          <caret line="23" column="115" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="115" />
-=======
-        <state relative-caret-position="-1217">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-27/android.jar!/android/app/Activity.class">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="85">
-          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-=======
-        <state relative-caret-position="557">
-          <caret line="606" column="0" lean-forward="false" selection-start-line="606" selection-start-column="0" selection-end-line="606" selection-end-column="0" />
-          <folding>
-            <marker date="1528336287817" expanded="false" signature="3:117" ph="/.../" />
-            <marker date="1528336287817" expanded="true" signature="900:923" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="971:994" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="1056:1079" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="1139:1162" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="1199:1222" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="1274:1297" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="1356:1379" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="1424:1447" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="1505:1528" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="1577:1600" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="1672:1695" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="1763:1786" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="1897:1920" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="2002:2025" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="2150:2173" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="2245:2268" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="2383:2406" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="2437:2460" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="2493:2516" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="2552:2575" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="2607:2630" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="2666:2689" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="2731:2754" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="2800:2823" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="2885:2908" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="2964:2987" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="3066:3089" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="3140:3163" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="3214:3237" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="3283:3306" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="3370:3393" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="3462:3485" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="3600:3623" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="3654:3677" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="3716:3739" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="3845:3868" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="3926:3949" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="4011:4034" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="4120:4143" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="4198:4221" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="4278:4301" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="4441:4464" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="4520:4543" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="4573:4596" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="4629:4652" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="4689:4712" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="4829:4852" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="4858:4888" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="4985:5008" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="5051:5074" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="5201:5224" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="5230:5260" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="5367:5390" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="5438:5461" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="5467:5497" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="5568:5591" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="5681:5704" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="5791:5814" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="5866:5889" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="5975:5998" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="6043:6066" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="6130:6153" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="6218:6241" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="6273:6296" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="6338:6361" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="6423:6446" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="6512:6535" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="6541:6571" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="6794:6817" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="6823:6853" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="6943:6966" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="6972:7002" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="7091:7114" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="7180:7203" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="7253:7276" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="7339:7362" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="7412:7435" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="7492:7515" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="7616:7639" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="7740:7763" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="7843:7866" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="7953:7976" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="8032:8055" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="8113:8136" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="8188:8211" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="8284:8307" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="8385:8408" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="8479:8502" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="8596:8619" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="8653:8676" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="8753:8776" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="8842:8865" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="8935:8958" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="9032:9055" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="9093:9116" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="9208:9231" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="9268:9291" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="9348:9371" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="9410:9433" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="9474:9497" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="9535:9558" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="9625:9648" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="9723:9746" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="9815:9838" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="9911:9934" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="10011:10034" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="10143:10166" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="10230:10253" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="10331:10354" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="10453:10476" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="10549:10572" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="10655:10678" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="10749:10772" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="10814:10837" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="10902:10925" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="10991:11014" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="11085:11108" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="11144:11167" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="11238:11261" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="11345:11368" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="11453:11476" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="11538:11561" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="11597:11620" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="11657:11680" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="11821:11844" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="11909:11932" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="11999:12022" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="12080:12103" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="12140:12163" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="12234:12257" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="12319:12342" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="12348:12378" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="12461:12484" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="12490:12520" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="12627:12650" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="12656:12686" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="12783:12806" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="12812:12842" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="12963:12986" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="12992:13022" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="13090:13113" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="13119:13149" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="13244:13267" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="13273:13303" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="13374:13397" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="13403:13433" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="13503:13526" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="13603:13626" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="13667:13690" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="13751:13774" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="13918:13941" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="14030:14053" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="14098:14121" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="14184:14207" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="14284:14307" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="14389:14412" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="14515:14538" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="14612:14635" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="14696:14719" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="14776:14799" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="14837:14860" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="14971:14994" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="15086:15109" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="15223:15246" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="15333:15356" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="15445:15468" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="15584:15607" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="15658:15681" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="15921:15944" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="16211:16234" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="16297:16320" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="16410:16433" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="16501:16524" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="16619:16642" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="16856:16879" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="17120:17143" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="17234:17257" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="17375:17398" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="17476:17499" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="17604:17627" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="17744:17767" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="17911:17934" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="18057:18080" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="18230:18253" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="18521:18544" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="18839:18862" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="18935:18958" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="19008:19031" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="19110:19133" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="19176:19199" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="19248:19271" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="19321:19344" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="19408:19431" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="19477:19500" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="19535:19558" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="19593:19616" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="19664:19687" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="19716:19739" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="19766:19789" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="19824:19847" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="19909:19932" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="19974:19997" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="20047:20070" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="20157:20180" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="20220:20243" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="20282:20305" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="20405:20428" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="20509:20532" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="20648:20671" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="20739:20762" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="20805:20828" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="20857:20880" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="20914:20937" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="20990:21013" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="21063:21086" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="21148:21171" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="21243:21266" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="21336:21359" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="21416:21439" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="21479:21502" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="21508:21538" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="21610:21633" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="21686:21709" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="21748:21771" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="21848:21871" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="21978:22001" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="22099:22122" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="22128:22158" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="22249:22272" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="22278:22308" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="22412:22435" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="22441:22471" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="22571:22594" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="22600:22630" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="22705:22728" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="22734:22764" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="22857:22880" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="22943:22966" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="23014:23037" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="23130:23153" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="23231:23254" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="23319:23342" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="23475:23498" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="23657:23680" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="23808:23831" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="23866:23889" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="23895:23925" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="24009:24032" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="24038:24068" ph="/**...*/" />
-            <marker date="1528336287817" expanded="true" signature="24137:24160" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="24205:24228" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="24270:24293" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="24458:24481" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="24577:24600" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="24706:24729" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="24836:24859" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="24976:24999" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="25067:25090" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="25159:25182" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="25261:25284" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="25351:25374" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="25478:25501" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="25563:25586" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="25678:25701" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="25792:25815" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="25859:25882" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="25932:25955" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="26064:26087" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="26121:26144" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="26177:26200" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="26246:26269" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="26329:26352" ph="{}" />
-            <marker date="1528336287817" expanded="true" signature="26408:26431" ph="{}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="57" lean-forward="false" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
-          <folding />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/NavigationBaseActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="119">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-=======
-        <state relative-caret-position="493">
-          <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-          <folding />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="340">
-          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-=======
-        <state relative-caret-position="502">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-          <folding>
-            <element signature="e#437#455#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/Pop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="1581">
-          <caret line="102" column="46" lean-forward="false" selection-start-line="102" selection-start-column="46" selection-end-line="102" selection-end-column="46" />
-=======
-        <state relative-caret-position="561">
-          <caret line="43" column="47" lean-forward="false" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="47" />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/AboutActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="425">
-          <caret line="57" column="71" lean-forward="false" selection-start-line="57" selection-start-column="71" selection-end-line="57" selection-end-column="71" />
-          <folding>
-            <element signature="e#6799#6800#0" expanded="true" />
-            <element signature="e#6837#6838#0" expanded="true" />
-          </folding>
-=======
-        <state relative-caret-position="68">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/CSVManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="595">
-          <caret line="51" column="18" lean-forward="false" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-=======
-        <state relative-caret-position="953">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding>
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
->>>>>>> 808e8e58ac5ec388f7a83a763f1c919dd74ac5d5
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glenn/seng_300_project/LogTasks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="154" column="20" lean-forward="false" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="20" />
-          <folding>
-            <element signature="e#3587#4292#0" expanded="true" />
-            <element signature="e#4291#4292#0" expanded="true" />
-            <element signature="e#5653#6529#0" expanded="true" />
-            <element signature="e#6528#6529#0" expanded="true" />
+            <element signature="e#1609#1847#0" expanded="true" />
+            <element signature="e#1846#1847#0" expanded="true" />
           </folding>
         </state>
       </provider>
