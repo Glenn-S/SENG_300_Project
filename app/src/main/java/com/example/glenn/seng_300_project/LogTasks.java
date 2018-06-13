@@ -152,7 +152,7 @@ public class LogTasks extends NavigationBaseActivity {
                     csvManager.writeTaskList(mTaskItems, LogTasks.this);
 
                     sendEmailWithOtherApp(LogTasks.this, email, nameDate, "", csvFile.getPath());
-                    
+
                 }
                 catch(IOException e){
                     Toast.makeText(LogTasks.this, "Could not create file.", Toast.LENGTH_SHORT).show();
