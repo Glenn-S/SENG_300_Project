@@ -62,6 +62,7 @@ public class Pop extends Activity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             timeValue = extras.getString("time");
+            intervalValue = extras.getString
             //The key argument here must match that used in the other activity
         }
 

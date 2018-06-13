@@ -81,6 +81,7 @@ public class LogTasks extends NavigationBaseActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(LogTasks.this, Pop.class);
                 // pass the time string to the pop class
+                intent.putExtra("interval", mTaskItems.get(position).durationInMin);
                 intent.putExtra("time", mTaskItems.get(position).startTime);
                 startActivity(intent);
                 view.setBackgroundColor(Color.parseColor("#3174C6"));
