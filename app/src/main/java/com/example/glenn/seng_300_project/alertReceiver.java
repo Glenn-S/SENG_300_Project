@@ -58,16 +58,6 @@ public class alertReceiver extends BroadcastReceiver {
         editor.putInt("HOUR_TIME_KEY", hour);
         editor.putInt("MINUTE_TIME_KEY", minute);
 
-        CSVManager fileManager = new CSVManager(fileName);
-        try{
-            List<TaskInterval> list = fileManager.readTaskList();
-            list.add(new TaskInterval(hour + ":" + minute, Integer.toString(interval), ""));
-            fileManager.writeTaskList(list, context);
-        }
-        catch (IOException i){
-
-        }
-
         editor.commit();
 
     }

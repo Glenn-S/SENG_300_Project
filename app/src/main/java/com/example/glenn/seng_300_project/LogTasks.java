@@ -32,6 +32,9 @@ import java.util.Date;
 import java.util.List;
 
 public class LogTasks extends NavigationBaseActivity {
+
+    final static int emailCode = 0;
+
     private ListView lvTaskItems;
     private TaskItemsAdapter adapter;
     private List<TaskInterval> mTaskItems;
@@ -156,7 +159,7 @@ public class LogTasks extends NavigationBaseActivity {
                     csvManager.writeTaskList(mTaskItems, LogTasks.this);
 
                     sendEmailWithOtherApp(LogTasks.this, email, nameDate, "", csvFile.getPath());
-                    
+
                 }
                 catch(IOException e){
                     Toast.makeText(LogTasks.this, "Could not create file.", Toast.LENGTH_SHORT).show();
@@ -189,6 +192,8 @@ public class LogTasks extends NavigationBaseActivity {
         finally {
             adapter.notifyDataSetChanged();
         }
+
+
     }
 
     /**
@@ -199,7 +204,7 @@ public class LogTasks extends NavigationBaseActivity {
      * @param body - Body of the email
      * @param filePath -Filepath to an attachment
      */
-    public static void sendEmailWithOtherApp(Context context, String recipientEmail, String subject, String body, String filePath){
+    public static void sendEmailWithOtherApp(Activity context, String recipientEmail, String subject, String body, String filePath){
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_EMAIL, new String[]{recipientEmail}); // Set to: field
@@ -210,7 +215,16 @@ public class LogTasks extends NavigationBaseActivity {
         Uri uri = Uri.fromFile(attachment);
 
         intent.putExtra(Intent.EXTRA_STREAM, uri);
-        context.startActivity(Intent.createChooser(intent, "Send mail"));
+        context.startActivityForResult(Intent.createChooser(intent, "Send mail"),emailCode);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        if(requestCode == emailCode && resultCode == RESULT_OK){
+            Intent intent = new Intent(LogTasks.this, StartActivity.class);
+            startActivity(intent);
+            finish();
+        }
     }
 
     private void startAlarm(Calendar c)

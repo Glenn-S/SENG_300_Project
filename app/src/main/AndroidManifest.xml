@@ -28,9 +28,16 @@
         <activity android:name=".SetTimeActivity" />
         <activity android:name=".NavigationBaseActivity" />
         <activity android:name=".HelpActivity" />
+<<<<<<< HEAD
         <activity android:name=".TaskActivity" />
         <receiver android:name=".alertReceiver"></receiver>
         <activity android:name=".AboutActivity"></activity>
+=======
+        <activity android:name=".TaskActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".AboutActivity"
+            android:theme="@style/AppTheme"></activity>
+>>>>>>> 14d5fb28dc174ffe73c126bcde500186a2884b66
     </application>
 
 </manifest>
