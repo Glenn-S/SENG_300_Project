@@ -13,6 +13,8 @@ import org.w3c.dom.Text;
 
 public class SetTimeActivity extends Activity {
 
+    // after the user registers, the first time that they set the frequency should be saved and then
+
     int interval = 15, hour = 1, minute = 0;
 
     @Override
