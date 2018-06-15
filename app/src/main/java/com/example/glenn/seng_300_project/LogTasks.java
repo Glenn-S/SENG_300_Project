@@ -36,6 +36,7 @@ public class LogTasks extends NavigationBaseActivity {
     private TaskItemsAdapter adapter;
     private List<TaskInterval> mTaskItems;
     private int hour, minute, interval;
+    private String CSVfileName;
     private File csvFile;
     private static LogTasks instance;
 
@@ -43,6 +44,7 @@ public class LogTasks extends NavigationBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_tasks);
+        instance = this;
 
         Intent intent = getIntent();
         if(intent.getExtras() == null) {
@@ -62,14 +64,6 @@ public class LogTasks extends NavigationBaseActivity {
         c.set(Calendar.MINUTE, minute);
         c.set(Calendar.SECOND, 0);
 
-        //This is temporary
-        hour = c.get(Calendar.HOUR_OF_DAY);
-        minute = c.get(Calendar.MINUTE);
-        hour = 12;
-        minute = 00;
-        TextView timeOfNext = (TextView) findViewById(R.id.timeOfNext);
-        timeOfNext.setText(hour + ":" + minute);
-
         setContentView(R.layout.activity_log_tasks);
         final LogTask logTask = new LogTask(); // new instance of logTask class
 
@@ -80,25 +74,29 @@ public class LogTasks extends NavigationBaseActivity {
 
         mTaskItems = new ArrayList<>(); // set new array of task times in unspecified type
 
-        // Test values
-        // CSV manager need the duration as well
-        mTaskItems.add(new TaskInterval("9am", "60", "Coded"));
-        mTaskItems.add(new TaskInterval("10am", "60", "Read Email"));
-        mTaskItems.add(new TaskInterval("11am", "60", "Meetings"));
-        mTaskItems.add(new TaskInterval("12am", "60", "Read Emails"));
-        mTaskItems.add(new TaskInterval("1pm", "60", "Refactored"));
-        mTaskItems.add(new TaskInterval("2pm", "60", ""));
-        mTaskItems.add(new TaskInterval("3pm", "60", "At Lunch"));
-        mTaskItems.add(new TaskInterval("4pm", "60", "Edited Document"));
-        mTaskItems.add(new TaskInterval("5pm", "60", "Talked with Coworker"));
+        c.add(Calendar.MINUTE, interval);
+        while(c.before(Calendar.getInstance()))
+        {
 
-        //Init adapter
+            hour = c.get(Calendar.HOUR_OF_DAY);
+            minute = c.get(Calendar.MINUTE);
+            if(hour <= 12) {
+                if (minute == 0)
+                    mTaskItems.add(new TaskInterval(hour + ":0" + minute + "AM", Integer.toString(interval), ""));
+                else
+                    mTaskItems.add(new TaskInterval(hour + ":" + minute + "AM", Integer.toString(interval), ""));
+            }
+            else {
+                if (minute == 0)
+                    mTaskItems.add(new TaskInterval(hour - 12 + ":0" + minute + "PM", Integer.toString(interval), ""));
+                else
+                    mTaskItems.add(new TaskInterval(hour - 12 + ":" + minute + "PM", Integer.toString(interval), ""));
+            }
+            c.add(Calendar.MINUTE, interval);
+        }
+
         adapter = new TaskItemsAdapter(getApplicationContext(), mTaskItems);
         lvTaskItems.setAdapter(adapter);
-
-        // create method for setting using the view.setBack. based on if task string is empty or not
-        startAlarm(c);
-
 
         // call the pop up to select a task
         lvTaskItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -127,6 +125,7 @@ public class LogTasks extends NavigationBaseActivity {
         final String nameDate = lastName + "_" + firstName + "_" + formattedDate;
 
         final String filename = nameDate + ".csv";
+        CSVfileName = filename;
         final File filePath = Environment.getExternalStorageDirectory();
         csvFile = new File(filePath, filename);
 
@@ -164,6 +163,8 @@ public class LogTasks extends NavigationBaseActivity {
                 }
             }
         });
+
+        startAlarm(c);
     }
 
     @Override
@@ -212,58 +213,46 @@ public class LogTasks extends NavigationBaseActivity {
         context.startActivity(Intent.createChooser(intent, "Send mail"));
     }
 
-    /*
-    For timer interrupt (things to be done inside)
-    read from CSV file to get current list
-    List.add(new TaskInterval(timeOfInterval, "");
-    write the list back to the file
-    Update Time of Next Interval
-    update the view
-     */
-
-
-
     private void startAlarm(Calendar c)
     {
-        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(this, AlertReceiver.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
-
-        // This block checks for if the user chooses an earlier time and add the blocks accordingly.
-        c.add(Calendar.MINUTE, interval);
-        while(c.before(Calendar.getInstance()))
-        {
-            // add createNewTaskLog() method
-            c.add(Calendar.MINUTE, interval);
-        }
+        AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+        Intent intent = new Intent(this, alertReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(getBaseContext(), 0, intent, Intent.FILL_IN_DATA);
 
         hour = c.get(Calendar.HOUR_OF_DAY);
         minute = c.get(Calendar.MINUTE);
         TextView timeView = (TextView) findViewById(R.id.timeOfNext);
-        timeView.setText(hour + ":" + minute);
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), 5000, pendingIntent);
+        if(hour > 12) {
+            if (minute == 0)
+                timeView.setText(hour - 12 + ":0" + minute + "PM");
+            else
+                timeView.setText(hour - 12 + ":" + minute + "PM");
+        }
+        else {
+            if (minute == 0)
+                timeView.setText(hour - 12 + ":0" + minute + "AM");
+            else
+                timeView.setText(hour - 12 + ":" + minute + "+AM");
+        }
 
+        SharedPreferences preferences = this.getSharedPreferences("MyPref", 0);
+        final SharedPreferences.Editor editor = preferences.edit();
+
+        editor.putInt("HOUR_TIME_KEY", hour).apply();
+        editor.putInt("MINUTE_TIME_KEY", minute).apply();
+        editor.putInt("INTERVAL_TIME_KEY", interval).apply();
+        editor.putString("FILENAME_KEY", CSVfileName).apply();
+
+        alarmManager.set(AlarmManager.RTC_WAKEUP, c.getTimeInMillis() + (interval*60*1000), pendingIntent);
     }
 
     private void cancelAlarm()
     {
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(this, AlertReceiver.class);
+        Intent intent = new Intent(this, alertReceiver.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
 
         alarmManager.cancel(pendingIntent);
-    }
-
-    public class AlertReceiver extends BroadcastReceiver {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            // Implement adding new task block, updating time, pop up task methods.
-            TextView timeView = (TextView) findViewById(R.id.timeOfNext);
-            timeView.setText(hour + ":" + minute);
-            hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
-            minute = Calendar.getInstance().get(Calendar.MINUTE);
-
-        }
     }
 
     private static final int REQUEST_EXTERNAL_STORAGE = 1;

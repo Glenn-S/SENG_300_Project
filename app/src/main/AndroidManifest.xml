@@ -29,6 +29,7 @@
         <activity android:name=".NavigationBaseActivity" />
         <activity android:name=".HelpActivity" />
         <activity android:name=".TaskActivity" />
+        <receiver android:name=".alertReceiver"></receiver>
         <activity android:name=".AboutActivity"></activity>
     </application>
 

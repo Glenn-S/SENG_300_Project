@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-35:12
+ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-36:12
 MERGED from [com.android.support:design:27.1.1] C:\Users\Sep\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\54f861c101f4a52059714bd3fd858367\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Sep\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\a0be2d7e9ff76944c17c993a1716070c\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Sep\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\94ed9fcb80ef624d716853df732c338c\AndroidManifest.xml:2:1-11:12
@@ -21,20 +21,20 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Sep\.gradle\ca
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Sep\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\e59102e43cf95d629c09a7d2ca3afed8\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Sep\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\83eb4788a2db64d23880f30091514e96\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Sep\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e37f9486636ac6887e5e74390a073102\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-36:12
 	package
 		ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:3:5-49
 		INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-35:12
+		ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-36:12
 		INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-35:12
+		ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:1-36:12
 		INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:2:11-69
@@ -51,7 +51,7 @@ ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\Andr
 	android:name
 		ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:6:22-78
 application
-ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:8:5-33:19
+ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:8:5-34:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Sep\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\94ed9fcb80ef624d716853df732c338c\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Sep\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\94ed9fcb80ef624d716853df732c338c\AndroidManifest.xml:9:5-20
 	android:supportsRtl
@@ -110,10 +110,14 @@ activity#com.example.glenn.seng_300_project.TaskActivity
 ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:31:9-50
 	android:name
 		ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:31:19-47
-activity#com.example.glenn.seng_300_project.AboutActivity
+receiver#com.example.glenn.seng_300_project.alertReceiver
 ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:32:9-60
 	android:name
 		ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:32:19-48
+activity#com.example.glenn.seng_300_project.AboutActivity
+ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:33:9-60
+	android:name
+		ADDED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml:33:19-48
 uses-sdk
 INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Sep\AndroidStudioProjects\SENG_300_Project\app\src\main\AndroidManifest.xml
