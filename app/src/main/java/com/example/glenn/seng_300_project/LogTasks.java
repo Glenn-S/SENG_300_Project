@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -208,7 +209,9 @@ public class LogTasks extends NavigationBaseActivity {
         intent.putExtra(Intent.EXTRA_TEXT, body); //Write body of the email
 
         File attachment = new File(filePath);
-        Uri uri = Uri.fromFile(attachment);
+
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        Uri uri = FileProvider.getUriForFile(context, context.getApplicationContext().getPackageName() + ".my.package.name.provider", attachment);
 
         intent.putExtra(Intent.EXTRA_STREAM, uri);
         context.startActivityForResult(Intent.createChooser(intent, "Send mail"),emailCode);

@@ -18,13 +18,12 @@ public class LogTaskTest {
     // good to start
     @Test
     public void addTaskTest () {
-        LogTask.list = new ArrayList();
-        List tasks = new ArrayList();
-        LogTask task = new LogTask();
-        assertEquals(0, tasks.size());
-        tasks = task.addTask("Coded");
-        assertEquals("Coded", tasks.get(0).toString());
-        assertEquals(1, tasks.size());
+        TaskManager tm = new TaskManager();
+        tm.addTask("Coded");
+        ArrayList<String> taskList = new ArrayList<>(tm.getTaskList());
+
+        assertEquals("Coded", taskList.get(0).toString());
+        assertEquals(1, taskList.size());
     }
 
     // good to start

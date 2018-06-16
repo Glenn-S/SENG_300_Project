@@ -19,18 +19,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CSVManager {
-    /*
-    public class TaskInterval{
-        public String taskName;
-        public String startTime;
-        public long durationInMin;
-
-        public TaskInterval(String start, long duration, String task){
-            taskName = task;
-            startTime = start;
-            durationInMin = duration;
-        }
-    }*/
 
     String filename;
 

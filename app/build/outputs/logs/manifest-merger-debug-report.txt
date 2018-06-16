@@ -1,9 +1,20 @@
 -- Merging decision tree log ---
+provider#com.example.glenn.seng_300_project.MyFileProvider
+INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:34:9-42:20
+	android:grantUriPermissions
+		ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:38:13-47
+	android:authorities
+		INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:36:13-76
+	android:exported
+		ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:37:13-37
+	android:name
+		ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:35:13-43
 manifest
-ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-36:12
+ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-45:12
 MERGED from [com.android.support:design:27.1.1] C:\Users\deeri\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\650de1366ce43403099f9c1a48502794\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\deeri\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\cee801380dd27c4d10c82743b5e3615a\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\deeri\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\da60457c6f1a7562918b69c471379384\AndroidManifest.xml:2:1-11:12
@@ -21,20 +32,20 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\deeri\.gradle\
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\deeri\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\4783bc261f80128f1d5cc2f993271c49\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\deeri\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d1175bd1aa816f73a0276222835464fd\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\deeri\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d07115004e541e397f60439903d5ed50\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-45:12
 	package
 		ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:3:5-49
 		INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:2:11-69
@@ -47,7 +58,7 @@ ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\An
 	android:name
 		ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:5:22-78
 application
-ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:7:5-34:19
+ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:7:5-43:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\deeri\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\da60457c6f1a7562918b69c471379384\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\deeri\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\da60457c6f1a7562918b69c471379384\AndroidManifest.xml:9:5-20
 	android:supportsRtl
@@ -162,3 +173,9 @@ INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main
 		INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:39:13-41:57
+	android:resource
+		ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:41:17-55
+	android:name
+		ADDED from C:\Users\deeri\StudioProjects\SENG_300_ProjectRevised\app\src\main\AndroidManifest.xml:40:17-67

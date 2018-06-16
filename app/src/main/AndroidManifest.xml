@@ -31,6 +31,15 @@
             android:theme="@style/AppTheme"/>
         <activity android:name=".AboutActivity"
             android:theme="@style/AppTheme"></activity>
+        <provider
+            android:name=".MyFileProvider"
+            android:authorities="${applicationId}.my.package.name.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
     </application>
 
 </manifest>
