@@ -28,12 +28,12 @@ public class MainActivity extends NavigationBaseActivity {
         // get permission upon the first opening of the program to use storage
         // if permission is not granted we should probably close the app
         LogTasks.verifyStoragePermissions(MainActivity.this);
-
+/*
         if(alreadyRegistered()){
             startActivity(new Intent(MainActivity.this, StartActivity.class));
             finish();
         }
-
+*/
 
         final EditText inputFirstName = (EditText) findViewById(R.id.input_first_name);
         final EditText inputLastName = (EditText) findViewById(R.id.input_last_name);

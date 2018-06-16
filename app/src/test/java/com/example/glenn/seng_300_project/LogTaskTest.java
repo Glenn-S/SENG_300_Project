@@ -1,7 +1,10 @@
 package com.example.glenn.seng_300_project;
 
+import android.widget.ListView;
+
 import org.junit.Test;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -74,35 +77,28 @@ public class LogTaskTest {
         assertEquals("11:00", logItems.get(2).getTime().toString());
     }
 
-    // changes the background colour of a task when completed
-    @Test
-    public void changeBackColourTest () {
-        LogTask.list = new ArrayList();
-        LogTask task = new LogTask();
-        String colourVal = "#FF3174C6";
-        task.changeBackColour(colourVal);
-        String value = task.getBackColour();
-        assertEquals(colourVal, value);
-    }
-
     // good to start
     @Test
     public void setFileTest () {
-        LogTask.list = new ArrayList();
-        LogTask task = new LogTask();
-        ArrayList<TaskList> logItems = new ArrayList<>();
-        ArrayList<TaskList> returnedItems;
-        Calendar time = Calendar.getInstance();
-        logItems.add(new TaskList("9:00", "Coded"));
-        logItems.add(new TaskList("10:00", "Read Email"));
-        logItems.add(new TaskList("11:00", "Meetings"));
-        logItems.add(new TaskList("12:00", "Read Emails"));
-        logItems.add(new TaskList("1:00", "Refactored"));
-        task.setFile(logItems);
-        returnedItems = task.getFile();
-        for (int i = 0; i < logItems.size(); i++){
-            assertEquals(logItems.get(0).getTime().toString(), returnedItems.get(0).getTime().toString());
-            assertEquals(logItems.get(0).getTask().toString(), returnedItems.get(0).getTask().toString());
+        ArrayList<TaskInterval> returnedItems = new ArrayList<>();
+        ArrayList<TaskInterval> mTaskItems = new ArrayList<>(); // set new array of task times in unspecified type
+        LogTask lt = new LogTask();
+
+        mTaskItems.add(new TaskInterval("9am", "60", "Coded"));
+        mTaskItems.add(new TaskInterval("10am", "60", "Read Email"));
+        mTaskItems.add(new TaskInterval("11am", "60", "Meetings"));
+        mTaskItems.add(new TaskInterval("12am", "60", "Read Emails"));
+        mTaskItems.add(new TaskInterval("1pm", "60", "Refactored"));
+        mTaskItems.add(new TaskInterval("2pm", "60", ""));
+        mTaskItems.add(new TaskInterval("3pm", "60", "At Lunch"));
+        mTaskItems.add(new TaskInterval("4pm", "60", "Edited Document"));
+        mTaskItems.add(new TaskInterval("5pm", "60", "Talked with Coworker"));
+        lt.setFile(mTaskItems);
+        returnedItems = lt.getFile();
+        for (int i = 0; i < mTaskItems.size(); i++){
+            assertEquals(mTaskItems.get(i).startTime, returnedItems.get(i).startTime);
+            assertEquals(mTaskItems.get(i).durationInMin, returnedItems.get(i).durationInMin);
+            assertEquals(mTaskItems.get(i).taskName, returnedItems.get(i).taskName);
         }
     }
 

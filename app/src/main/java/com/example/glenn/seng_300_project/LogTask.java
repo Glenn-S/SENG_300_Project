@@ -5,7 +5,7 @@ import java.util.List;
 
 public class LogTask {
     static List list = new ArrayList();
-
+    static ArrayList<TaskInterval> taskList = new ArrayList<>();
 
     // calculates the time of the current interval for the list view
     public String getNextInterval (ArrayList<TaskList> logItems, String startTime, String frequency) {
@@ -66,24 +66,14 @@ public class LogTask {
         return listItems;
     }
 
-    // changes the background colour of a task when completed
-    public void changeBackColour (String colourValue) {
-        //will need to stub out this method
-        return;
-    }
-
-    public String getBackColour () { // stub method
-        String string = new String();
-        return string;
-    }
     // takes a struct of time and task
-    public void setFile (ArrayList<TaskList> dayLog) {
+    public void setFile (ArrayList<TaskInterval> dayLog) { // stubbed out for now but will have access to a database
+        taskList = dayLog;
         return;
     }
 
-    public ArrayList<TaskList> getFile () {
-        ArrayList<TaskList> list = new ArrayList<TaskList>();
-        return list;
+    public ArrayList<TaskInterval> getFile () { // stubbed out for now but will have access to a database
+        return taskList;
     }
 
     // adds the next blank time interval
