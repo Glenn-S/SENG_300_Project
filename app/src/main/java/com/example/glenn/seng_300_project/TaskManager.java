@@ -23,6 +23,10 @@ public class TaskManager {
     private TaskDBManager dbHelper;
     private SQLiteDatabase db;
 
+    public TaskManager(){
+
+    }
+
     public TaskManager(Context context){
         dbHelper = new TaskDBManager(context);
 
