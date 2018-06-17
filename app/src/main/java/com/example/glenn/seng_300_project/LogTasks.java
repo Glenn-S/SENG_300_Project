@@ -83,15 +83,15 @@ public class LogTasks extends NavigationBaseActivity {
 
         // Test values
         // CSV manager need the duration as well
-        mTaskItems.add(new TaskInterval("9am", "60", "Coded"));
+        mTaskItems.add(new TaskInterval("9am", "60", "Coding"));
         mTaskItems.add(new TaskInterval("10am", "60", "Read Email"));
         mTaskItems.add(new TaskInterval("11am", "60", "Meetings"));
-        mTaskItems.add(new TaskInterval("12am", "60", "Read Emails"));
+        mTaskItems.add(new TaskInterval("12am", "60", "At Lunch"));
         mTaskItems.add(new TaskInterval("1pm", "60", "Refactored"));
-        mTaskItems.add(new TaskInterval("2pm", "60", ""));
-        mTaskItems.add(new TaskInterval("3pm", "60", "At Lunch"));
+        mTaskItems.add(new TaskInterval("2pm", "60", "Integrated Parts"));
+        mTaskItems.add(new TaskInterval("3pm", "60", "Coding"));
         mTaskItems.add(new TaskInterval("4pm", "60", "Edited Document"));
-        mTaskItems.add(new TaskInterval("5pm", "60", "Talked with Coworker"));
+        mTaskItems.add(new TaskInterval("5pm", "60", ""));
 
         //Init adapter
         adapter = new TaskItemsAdapter(getApplicationContext(), mTaskItems);
