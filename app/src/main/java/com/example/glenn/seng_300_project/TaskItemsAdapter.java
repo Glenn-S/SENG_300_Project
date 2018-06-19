@@ -20,6 +20,11 @@ public class TaskItemsAdapter extends BaseAdapter {
 
     // constructor
 
+    public List<TaskInterval> getData()
+    {
+        return mTaskItems;
+    }
+
     /**
      * To get the size of the array in number of elements
      * @return

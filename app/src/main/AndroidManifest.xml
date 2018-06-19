@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.glenn.seng_300_project">
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
@@ -22,6 +23,7 @@
         <activity
             android:name=".Pop"
             android:theme="@style/AppTheme.CustomTheme" />
+            <receiver android:name=".alertReceiver"/>
         '
         <activity android:name=".StartActivity" />
         <activity android:name=".SetTimeActivity" />
