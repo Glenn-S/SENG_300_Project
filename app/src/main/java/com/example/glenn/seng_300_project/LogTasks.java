@@ -35,7 +35,7 @@ public class LogTasks extends NavigationBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_tasks);
-
+        
         Intent intent = getIntent();
         if(intent.getExtras() == null) {
             hour = 0;
