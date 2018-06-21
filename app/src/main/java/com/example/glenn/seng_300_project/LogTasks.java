@@ -7,16 +7,12 @@ import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
-import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.FileProvider;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -26,21 +22,15 @@ import android.widget.Toast;
 
 import java.io.File;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
 
 public class LogTasks extends NavigationBaseActivity {
-
     final static int emailCode = 0;
-
-    private ListView lvTaskItems;
-    private TaskItemsAdapter adapter;
-    private List<TaskInterval> mTaskItems;
+    private PopulateList populateList;
+    private UserDetails userDetails;
     private int hour, minute, interval;
-    private File csvFile;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,43 +62,22 @@ public class LogTasks extends NavigationBaseActivity {
         timeOfNext.setText(hour + ":" + minute);
 
         setContentView(R.layout.activity_log_tasks);
-        final LogTask logTask = new LogTask(); // new instance of logTask class
 
-        lvTaskItems = (ListView)findViewById(R.id.list_view);
+        // initialize the adapter and populate the list
+        populateList = new PopulateList(getApplicationContext(), (ListView)findViewById(R.id.list_view));
+        populateList.setupList();
 
-        //for test purposes
-        lvTaskItems = (ListView)findViewById(R.id.list_view);
-
-        mTaskItems = new ArrayList<>(); // set new array of task times in unspecified type
-
-        // Test values
-        // CSV manager need the duration as well
-        mTaskItems.add(new TaskInterval("9am", "60", "Coding"));
-        mTaskItems.add(new TaskInterval("10am", "60", "Read Email"));
-        mTaskItems.add(new TaskInterval("11am", "60", "Meetings"));
-        mTaskItems.add(new TaskInterval("12am", "60", "At Lunch"));
-        mTaskItems.add(new TaskInterval("1pm", "60", "Refactored"));
-        mTaskItems.add(new TaskInterval("2pm", "60", "Integrated Parts"));
-        mTaskItems.add(new TaskInterval("3pm", "60", "Coding"));
-        mTaskItems.add(new TaskInterval("4pm", "60", "Edited Document"));
-        mTaskItems.add(new TaskInterval("5pm", "60", ""));
-
-        //Init adapter
-        adapter = new TaskItemsAdapter(getApplicationContext(), mTaskItems);
-        lvTaskItems.setAdapter(adapter);
-
-        // create method for setting using the view.setBack. based on if task string is empty or not
-        //startAlarm(c);
-
+        userDetails = new UserDetails(getApplicationContext());
+        userDetails.storeDetails();
 
         // call the pop up to select a task
-        lvTaskItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        populateList.lvTaskItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(LogTasks.this, Pop.class);
-                intent.putExtra("interval", mTaskItems.get(position).durationInMin);
-                intent.putExtra("time", mTaskItems.get(position).startTime);
-                intent.putExtra("filename", csvFile.getPath());
+                intent.putExtra("interval", populateList.mTaskItems.get(position).durationInMin);
+                intent.putExtra("time", populateList.mTaskItems.get(position).startTime);
+                intent.putExtra("filename", userDetails.csvFile.getPath());
                 intent.putExtra("intervalPosition", position);
                 startActivity(intent);
                 //view.setBackgroundColor(Color.parseColor("#3174C6"));
@@ -116,48 +85,24 @@ public class LogTasks extends NavigationBaseActivity {
         });
 
         //Get user information to create the filename
-        SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
-        final String firstName = pref.getString("FIRST_KEY", "no first name");
-        final String lastName = pref.getString("LAST_KEY", "no last name");
-        final String email = pref.getString("EMAIL_KEY", "no last name");
-
-        //Get date in YYYY-MM-DD format to append as part of the filename
-        Date date = new Date();
-        String formattedDate = new SimpleDateFormat("yyyy-MM-dd").format(date);
-
-        final String nameDate = lastName + "_" + firstName + "_" + formattedDate;
-
-        final String filename = nameDate + ".csv";
-        final File filePath = Environment.getExternalStorageDirectory();
-        csvFile = new File(filePath, filename);
-
-        //Create directory if it doesn't already exist
-        filePath.mkdir();
-        try{
-            //Create a new csv file and email it
-            csvFile.createNewFile();
-            CSVManager csvManager = new CSVManager(csvFile.getPath());
-            csvManager.writeTaskList(mTaskItems, LogTasks.this);
-        }catch (IOException e){
-            Log.e("LogTasks", "File could not be created");
-        }
+        userDetails.createFile(populateList.mTaskItems);
 
         FloatingActionButton fab = findViewById(R.id.sendMail);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CSVManager csvManager = new CSVManager(csvFile.getPath());
+                CSVManager csvManager = new CSVManager(userDetails.csvFile.getPath());
 
                 verifyStoragePermissions(LogTasks.this); //get permission to use file storage
                 try{
                     //Delete any previous files with the same name
-                    csvFile.delete();
+                    userDetails.csvFile.delete();
 
                     //Open a csv file and write the list of tasks to the csv file
-                    csvFile.createNewFile();
-                    csvManager.writeTaskList(mTaskItems, LogTasks.this);
+                    userDetails.csvFile.createNewFile();
+                    csvManager.writeTaskList(populateList.mTaskItems, LogTasks.this);
 
-                    sendEmailWithOtherApp(LogTasks.this, email, nameDate, "", csvFile.getPath());
+                    sendEmailWithOtherApp(LogTasks.this, userDetails.email, userDetails.nameDate, "", userDetails.csvFile.getPath());
 
                 }
                 catch(IOException e){
@@ -173,21 +118,21 @@ public class LogTasks extends NavigationBaseActivity {
 
         //After the user selects a task in the pop activity, the task will be saved into the file
         //We need to retrieve the contents of the file to populate the list for user to see
-        Log.e("FilePath onResume", csvFile.getPath());
-        CSVManager csvManager = new CSVManager(csvFile.getPath());
+        Log.e("FilePath onResume", userDetails.csvFile.getPath());
+        CSVManager csvManager = new CSVManager(userDetails.csvFile.getPath());
 
         //Create a backup of the list in case we cannot populate it after clearing it
-        ArrayList mTaskItemsBackup = new ArrayList(mTaskItems);
+        ArrayList mTaskItemsBackup = new ArrayList(populateList.mTaskItems);
 
         try{
-            mTaskItems.clear();
-            mTaskItems.addAll(csvManager.readTaskList());
+            populateList.mTaskItems.clear();
+            populateList.mTaskItems.addAll(csvManager.readTaskList());
         }
         catch(IOException e){
-            mTaskItems.addAll(mTaskItemsBackup);
+            populateList.mTaskItems.addAll(mTaskItemsBackup);
         }
         finally {
-            adapter.notifyDataSetChanged();
+            populateList.adapter.notifyDataSetChanged();
         }
 
 
@@ -267,6 +212,7 @@ public class LogTasks extends NavigationBaseActivity {
 
         alarmManager.cancel(pendingIntent);
     }
+
 
     public class AlertReceiver extends BroadcastReceiver {
         @Override
