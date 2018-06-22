@@ -29,44 +29,25 @@ public class LogTasks extends NavigationBaseActivity {
     final static int emailCode = 0;
     private PopulateList populateList;
     private UserDetails userDetails;
-    private int hour, minute, interval;
+    private SetTime setTime;
+   // private int hour, minute, interval;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_tasks);
 
-        Intent intent = getIntent();
-        if(intent.getExtras() == null) {
-            hour = 0;
-            minute = 0;
-        }
-        else
-        {
-            Bundle extras = getIntent().getExtras();
-            hour = extras.getInt("HOUR_KEY");
-            minute = extras.getInt("MINUTE_KEY");
-            interval = extras.getInt("INTERVAL_KEY");
-        }
-        Calendar c = Calendar.getInstance();
-        c.set(Calendar.HOUR_OF_DAY, hour);
-        c.set(Calendar.MINUTE, minute);
-        c.set(Calendar.SECOND, 0);
-
-        //This is temporary
-        hour = c.get(Calendar.HOUR_OF_DAY);
-        minute = c.get(Calendar.MINUTE);
-        hour = 12;
-        minute = 00;
+        setTime = new SetTime(getIntent());
+        setTime.setDisplay();
         TextView timeOfNext = (TextView) findViewById(R.id.timeOfNext);
-        timeOfNext.setText(hour + ":" + minute);
-
+        //this is temporary
+        timeOfNext.setText(setTime.hour + ":" + setTime.minute);
         setContentView(R.layout.activity_log_tasks);
 
         // initialize the adapter and populate the list
         populateList = new PopulateList(getApplicationContext(), (ListView)findViewById(R.id.list_view));
         populateList.setupList();
-
+        // save the user details in database
         userDetails = new UserDetails(getApplicationContext());
         userDetails.storeDetails();
 
@@ -75,15 +56,10 @@ public class LogTasks extends NavigationBaseActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(LogTasks.this, Pop.class);
-                intent.putExtra("interval", populateList.mTaskItems.get(position).durationInMin);
-                intent.putExtra("time", populateList.mTaskItems.get(position).startTime);
-                intent.putExtra("filename", userDetails.csvFile.getPath());
-                intent.putExtra("intervalPosition", position);
+                populateList.passIntents(intent, position, userDetails);
                 startActivity(intent);
-                //view.setBackgroundColor(Color.parseColor("#3174C6"));
             }
         });
-
         //Get user information to create the filename
         userDetails.createFile(populateList.mTaskItems);
 
@@ -91,23 +67,8 @@ public class LogTasks extends NavigationBaseActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CSVManager csvManager = new CSVManager(userDetails.csvFile.getPath());
-
-                verifyStoragePermissions(LogTasks.this); //get permission to use file storage
-                try{
-                    //Delete any previous files with the same name
-                    userDetails.csvFile.delete();
-
-                    //Open a csv file and write the list of tasks to the csv file
-                    userDetails.csvFile.createNewFile();
-                    csvManager.writeTaskList(populateList.mTaskItems, LogTasks.this);
-
-                    sendEmailWithOtherApp(LogTasks.this, userDetails.email, userDetails.nameDate, "", userDetails.csvFile.getPath());
-
-                }
-                catch(IOException e){
-                    Toast.makeText(LogTasks.this, "Could not create file.", Toast.LENGTH_SHORT).show();
-                }
+                Permissions permissions = new Permissions(userDetails, populateList, LogTasks.this);
+                permissions.createPermission();
             }
         });
     }
@@ -189,18 +150,18 @@ public class LogTasks extends NavigationBaseActivity {
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
 
         // This block checks for if the user chooses an earlier time and add the blocks accordingly.
-        c.add(Calendar.MINUTE, interval);
+        c.add(Calendar.MINUTE, setTime.interval);
         while(c.before(Calendar.getInstance()))
         {
             // add createNewTaskLog() method
-            c.add(Calendar.MINUTE, interval);
+            c.add(Calendar.MINUTE, setTime.interval);
         }
 
-        hour = c.get(Calendar.HOUR_OF_DAY);
-        minute = c.get(Calendar.MINUTE);
+        setTime.hour = c.get(Calendar.HOUR_OF_DAY);
+        setTime.minute = c.get(Calendar.MINUTE);
         TextView timeView = (TextView) findViewById(R.id.timeOfNext);
-        timeView.setText(hour + ":" + minute);
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), 1000*60*interval, pendingIntent);
+        timeView.setText(setTime.hour + ":" + setTime.minute);
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), 1000*60*setTime.interval, pendingIntent);
 
     }
 
@@ -219,9 +180,9 @@ public class LogTasks extends NavigationBaseActivity {
         public void onReceive(Context context, Intent intent) {
             // Implement adding new task block, updating time, pop up task methods.
             TextView timeView = (TextView) findViewById(R.id.timeOfNext);
-            timeView.setText(hour + ":" + minute);
-            hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
-            minute = Calendar.getInstance().get(Calendar.MINUTE);
+            timeView.setText(setTime.hour + ":" + setTime.minute);
+            setTime.hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
+            setTime.minute = Calendar.getInstance().get(Calendar.MINUTE);
 
         }
     }

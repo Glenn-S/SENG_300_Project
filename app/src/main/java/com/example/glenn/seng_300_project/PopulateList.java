@@ -1,6 +1,7 @@
 package com.example.glenn.seng_300_project;
 
 import android.content.Context;
+import android.content.Intent;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -34,7 +35,13 @@ public class PopulateList extends LogTasks {
         this.mTaskItems.add(new TaskInterval("3pm", "60", "Coding"));
         this.mTaskItems.add(new TaskInterval("4pm", "60", "Edited Document"));
         this.mTaskItems.add(new TaskInterval("5pm", "60", ""));
+    }
 
+    public void passIntents(Intent intent, int position, UserDetails userDetails) {
+        intent.putExtra("interval", this.mTaskItems.get(position).durationInMin);
+        intent.putExtra("time", this.mTaskItems.get(position).startTime);
+        intent.putExtra("filename", userDetails.csvFile.getPath());
+        intent.putExtra("intervalPosition", position);
 
     }
 }
